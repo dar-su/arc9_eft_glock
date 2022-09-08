@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock Polymer80 PS9 pistol slide"
 ATT.CompactName = "G PS9"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide_ps9.png", "mips smooth")
 ATT.Description = [[The PS9 slide for Glock family pistols, manufactured by Polymer80.]]
 
 ATT.SortOrder = 0

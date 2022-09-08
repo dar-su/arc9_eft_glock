@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock Aimtech Tiger Shark sight mount"
 ATT.CompactName = "G TShark"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/tshark.png", "mips smooth")
 ATT.Description = [[A Glock family sight mount base designed for installation of additional reflex sights on the pistol. Manufactured by Aimtech.]]
 
 ATT.SortOrder = 0
@@ -15,7 +15,7 @@ ATT.Attachments = {
         PrintName = "Optic",
         Category = "eft_optic_small",
         Pos = Vector(-2.4, 3, 0),
-        Ang = Angle(180, 0, 0),
+        Ang = Angle(-90, 0, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
 }

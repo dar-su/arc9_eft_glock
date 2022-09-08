@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Magpul PMAG GL9 21-round magazine"
 ATT.CompactName = "GL9"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/gl9.png", "mips smooth")
 ATT.Description = [[A 21-round GL9 polymer magazine, manufactured by Magpul.]]
 
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Alpha Wolf Bullnose compensator"
 ATT.CompactName = "G AW"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/bullnose.png", "mips smooth")
 ATT.Description = [[The Alpha Wolf compensator manufactured by Lone Wolf. Can only be installed with the slides that have the bullnosed slide face.]]
 
 ATT.SortOrder = 0

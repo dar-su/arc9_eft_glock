@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 SGM Tactical 50-round drum magazine"
 ATT.CompactName = "G SGMT"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/drum.png", "mips smooth")
 ATT.Description = [[A high-capacity 50-round magazine for the Glock family pistols. Made in Korea and imported by SGM Tactical. Can hold even more than 50 rounds, but the manufacturer does not recommend loading more.]]
 
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

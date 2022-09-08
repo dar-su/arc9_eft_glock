@@ -83,9 +83,9 @@ SWEP.Firemodes = { { Mode = 1 } }
 
 -- General recoil multiplier
 SWEP.Recoil = 1
-SWEP.EFTRecoil = true
-SWEP.EFTRecoilUpMult = 250
-SWEP.EFTRecoilSideMult = 300
+SWEP.ViewRecoil = true
+SWEP.ViewRecoilUpMult = 250
+SWEP.ViewRecoilSideMult = 300
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.1 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
@@ -274,7 +274,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local ending = ""
 
     local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
-    local rand = 2
+    -- local rand = 0
     local nomag = false
 
     if elements["eft_mag_g17_std_17"]           then ending = 0
@@ -657,7 +657,7 @@ SWEP.Attachments = {
         Bone = "weapon",
         Category = {"eft_tactical_pistol", "eft_um3", "eft_g17_tac"},
         Pos = Vector(0, 23.3, -0.47),
-        Ang = Angle(90, -90, 90),
+        Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
     },
     {

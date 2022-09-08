@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 SAI threaded barrel"
 ATT.CompactName = "G SAI"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/barrel_sai.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Salient Arms International.]]
 
 -- ATT.SortOrder = 0

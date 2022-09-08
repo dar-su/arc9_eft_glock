@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock ZEV Tech rear sight"
 ATT.CompactName = "G ZT RS"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/rszt.png", "mips smooth")
 ATT.Description = [[A plus-size rear sight for Glock pistols family, manufactured by ZEV Technologies.]]
 
 ATT.SortOrder = 0

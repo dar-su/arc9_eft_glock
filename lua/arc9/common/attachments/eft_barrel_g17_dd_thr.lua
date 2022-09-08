@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Double Diamond threaded barrel"
 ATT.CompactName = "G DD thr."
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/barrel_ddthr.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Double Diamond.]]
 
 ATT.SortOrder = 0

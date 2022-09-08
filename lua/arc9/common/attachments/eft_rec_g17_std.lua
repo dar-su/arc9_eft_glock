@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 pistol slide"
 ATT.CompactName = "Glock"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for Glock 9x19 pistols.]]
 
 ATT.SortOrder = 0

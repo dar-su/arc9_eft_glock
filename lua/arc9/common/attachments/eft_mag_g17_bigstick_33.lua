@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 \"Big Stick\" 33-round magazine"
 ATT.CompactName = "Big Stick"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/stick.png", "mips smooth")
 ATT.Description = [[A factory-produced 33-round 9x19 magazine for Glock pistols.]]
 
 ATT.MenuCategory = "ARC-9 - EFT Attachments"

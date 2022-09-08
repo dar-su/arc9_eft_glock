@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock rear sight"
 ATT.CompactName = "Glock RS"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/rs.png", "mips smooth")
 ATT.Description = [[A standard-issue rear sight for Glock pistols.]]
 
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Lone Wolf threaded barrel"
 ATT.CompactName = "G AW"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/barrel_aw.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of the Glock family. Manufactured by Lone Wolf.]]
 
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock FAB Defense GLR-17 stock"
 ATT.CompactName = "GLR-17"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/stock.png", "mips smooth")
 ATT.Description = [[The GLR-17 telescoping buttstock, manufactured by FAB Defense. Designed to fit Glock-family pistols.]]
 
 ATT.SortOrder = 0

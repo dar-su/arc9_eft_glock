@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock ZEV Tech HEX Gen3 pistol slide"
 ATT.CompactName = "G ZT HEX"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide_zev.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.]]
 
 ATT.SortOrder = 0

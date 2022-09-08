@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 MOS slide"
 ATT.CompactName = "G MOS"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide_mos.png", "mips smooth")
 ATT.Description = [[The MOS (Modular Optic System) slide designed for Glock 9x19 pistols. Manufactured by Glock.]]
 
 ATT.SortOrder = 0

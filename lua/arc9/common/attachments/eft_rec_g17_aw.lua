@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock Alpha Wolf pistol slide"
 ATT.CompactName = "G AW"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide_aw.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by Lone Wolf.]]
 
 ATT.SortOrder = 0

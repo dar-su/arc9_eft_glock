@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock Dead Ringer Snake Eye rear sight"
 ATT.CompactName = "G SE RS"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/rsse.png", "mips smooth")
 ATT.Description = [[A rear sight for Glock series pistols with tritium bars for precision aiming, manufactured by Dead Ringer.]]
 
 ATT.SortOrder = 0

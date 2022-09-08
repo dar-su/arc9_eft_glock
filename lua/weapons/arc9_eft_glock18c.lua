@@ -1,7 +1,9 @@
 -- include("weapons/arc9_eft_glock17.lua")
 
 SWEP.Base = "arc9_eft_glock17"
+SWEP.Spawnable = true
 SWEP.PrintName = "Glock 18C"
+SWEP.Category = "ARC-9 - Escape From Tarkov"
 
 SWEP.Class = "Machine Pistol"
 
@@ -69,7 +71,7 @@ SWEP.Attachments = {
         Category = {"eft_tactical_pistol", "eft_um3", "eft_g17_tac"},
         RejectAttachments = { ["eft_silencer_fd917"] = true },
         Pos = Vector(0, 23.3, -0.47),
-        Ang = Angle(90, -90, 90),
+        Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
     },
     {

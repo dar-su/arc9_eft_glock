@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Alpha Wolf thread protector"
 ATT.CompactName = "G AW thr."
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/thr_aw.png", "mips smooth")
 ATT.Description = [[A thread protector for threaded barrels of Glock Alpha Wolf pistols produced by Lone Wolf.]]
 
 ATT.SortOrder = 0

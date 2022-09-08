@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 Viper Cut pistol slide"
 ATT.CompactName = "G ViperCut"
-ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/slide_vipercut.png", "mips smooth")
 ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 
 ATT.SortOrder = 0
