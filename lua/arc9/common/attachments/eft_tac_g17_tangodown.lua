@@ -7,3 +7,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_tangodown"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_acro"},
+        Pos = Vector(0.15, -0, -0.22),
+        --Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.2),
+    },
+}
