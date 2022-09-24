@@ -273,7 +273,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     local ending = ""
 
-    local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
+    -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2.99)) -- 0, 1, 2
     -- local rand = 0
     local nomag = false
 
@@ -290,6 +290,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- 2 mag checking  (!nomag)
     
     if anim == "inspect" or anim == "inspect_empty" then
+        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        local rand = swep.EFTInspectnum
+        if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
         else
@@ -301,6 +305,19 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     elseif anim == "reload" then
         return anim .. (empty and "_empty" or "") .. ending
     end
+
+    if anim == "fix" then
+        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
+
+        if ARC9EFTBASE then
+            net.Start("arc9eftjam")
+            net.WriteUInt(rand, 3)
+            net.Send(swep:GetOwner())
+        end
+
+        return "jam" .. rand
+    end
+
     -- print("nomag:", nomag, "rand:", rand, "anim:", anim, "ending:", ending)
 end
 
@@ -473,17 +490,89 @@ SWEP.Animations = {
             { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
         }
     },
+
+
+
     
-    ["fix"] = {
-        Source = {"jam0", "jam1", "jam2", "jam3", "jam4", "jam5"},
+    ["jam1"] = {
+        Source = "jam_shell",
         EventTable = {
-            { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 0.05 },
-            { s = "eft_shared/weap_bolt_handle_out.wav", t = 0.4 },
-            { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 0.95 },
-            { s = "eft_shared/weapon_generic_rifle_spin7.wav", t = 2.4 },
-            { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 3.1 },
+            { s = randspin, t = 0.05 },
+            { s = slidelock, t = 0.42 },
+            { s = slidelock, t = 0.9 },
+            { s = slidelock, t = 1.3 },
+            { s = slidelockgrab, t = 1.6 },
+            { s = "eft_shared/weap_round_out.wav", t = 1.65 },
+            { s =  path .. "fiveseven_slider_out_fast.wav", t = 2.1 },
+            { s = randspin, t = 2.51 },
+        },
+        EjectAt = 1.6
+    },        
+    
+    ["jam3"] = {
+        Source = "jam_hardjam",
+        EventTable = {
+            { s = randspin, t = 0.05 },
+            { s = slidelockgrab, t = 0.65 },
+            { s = slidelockgrab, t = 1 },
+            { s = slidelockgrab, t = 1.42 },
+            { s = slidelockgrab, t = 1.6 },
+            { s =  path .. "fiveseven_slider_out_fast.wav", t = 2.63 },
+            { s = "eft_shared/weap_round_out.wav", t = 2.75 },
+            { s =  path .. "fiveseven_slider_in_fast.wav", t = 2.89 },
+            { s = randspin, t = 3.24 },
+        },
+        EjectAt = 2.75
+    },      
+    
+    ["jam2"] = {
+        Source = "jam_feed",
+        EventTable = {
+            { s = randspin, t = 0.05 },
+            { s = slidelockgrab, t = 0.59 },
+            { s = slidelockgrab, t = 0.92 },
+            { s = slidelock, t = 1.2 },
+            { s =  path .. "fiveseven_slider_out_slow.wav", t = 1.29 },
+            { s = randspin, t = 1.64 },
+            { s = randspin, t = 1.92 },
+            { s = randspin, t = 2.3 },
+            { s = randspin, t = 2.53 },
+            { s = "eft_shared/weap_round_out.wav", t = 2.59 },
+            { s =  path .. "fiveseven_slider_in_fast.wav", t = 3.05 },
+            { s = randspin, t = 3.42 },
+        },
+        EjectAt = 2.59
+    },        
+    
+    ["jam4"] = {
+        Source = "jam_softjam",
+        EventTable = {
+            { s = randspin, t = 0.05 },
+            { s = slidelockgrab, t = 0.66 },
+            { s = slidelockgrab, t = 0.92 },
+            { s =  path .. "fiveseven_slider_out_slow.wav", t = 0.96 },
+            { s = "eft_shared/weap_round_out.wav", t = 1.04 },
+            { s =  path .. "fiveseven_slider_in_fast.wav", t = 1.21 },
+            { s = randspin, t = 1.55 },
+            { s = randspin, t = 1.73 },
+        },
+        EjectAt = 1.04
+    },    
+    
+    ["jam0"] = {
+        Source = {"misfire0", "misfire1", "misfire2"},
+        EventTable = {
+            { s = randspin, t = 0.2 },
+            { s = randspin, t = 0.55 },
+            { s = slidelockgrab, t = 0.71 },
+            { s =  path .. "fiveseven_slider_out_slow.wav", t = 0.74 },
+            { s =  path .. "fiveseven_slider_in_fast.wav", t = 0.87 },
+            { s = randspin, t = 1.17 },
+            { s = randspin, t = 1.37 },
         }
     },
+
+
 
     ["inspect0"] = {
         Source = "inspect",
