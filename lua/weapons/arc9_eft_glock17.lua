@@ -9,16 +9,14 @@ SWEP.PrintName = "Glock 17"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    Manufacturer = "Glock GmbH",
-    Calibre = "9x19mm Parabellum",
-    Action = "Recoil",
-    Country = "Republic of Austria",
-    Year = "1982"
+    Manufacturer1 = "Glock GmbH",
+    Calibre2 = "9x19mm Parabellum",
+    Action3 = "Recoil",
+    Country4 = "Republic of Austria",
+    Year5 = "1982"
 }
 
-SWEP.Credits = {
-    Author = "Darsu",
-}
+SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.Description = [[Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon.]]
 
@@ -296,6 +294,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
+            
+            if ARC9EFTBASE and SERVER then
+                net.Start("arc9eftmagcheck")
+                net.WriteBool(ending!= "_mag_1" and ending!="_mag_3") -- accurate or not based on mag type
+                net.WriteUInt(math.min(swep:Clip1(), swep:GetMaxClip1()), 9)
+                net.WriteUInt(swep:GetMaxClip1(), 9)
+                net.Send(swep:GetOwner())
+            end
         else
             if nomag then rand = math.min(rand, 1) end
             ending = rand
