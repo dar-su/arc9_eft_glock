@@ -8,14 +8,15 @@ SWEP.Category = "ARC-9 - Escape From Tarkov"
 SWEP.Class = "Machine Pistol"
 
 SWEP.Trivia = {
-    Manufacturer = "Glock GmbH",
-    Calibre = "9x19mm Parabellum",
-    Action = "Recoil",
-    Country = "Republic of Austria",
-    Year = "1989"
+--     Manufacturer = "Glock GmbH",
+--     Calibre = "9x19mm Parabellum",
+--     Action = "Recoil",
+--     Country = "Republic of Austria",
+    Year5 = "1989"
 }
 
 SWEP.Description = [[The Glock 18 is a selective-fire variant of the Glock 17. The firearm is typically used with an extended 33-round-capacity magazine, although other magazines from the Glock 17 can be used, with available capacities of 10, 17, or 19 rounds. It has a keyhole opening cut into the forward portion of the slide, similar to the opening on the Glock long-slide models, although the Glock 18 has a standard-length slide. The keyhole opening provides an area to allow the four, progressively larger (from back to front) compensator cuts machined into the barrel to vent the propellant gases upwards, affording more control over the rapid-firing machine pistol.]]
+-- SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 
 SWEP.DefaultBodygroups = "10000000000"
 
