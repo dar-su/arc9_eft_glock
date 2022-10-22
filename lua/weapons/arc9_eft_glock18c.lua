@@ -1,3 +1,5 @@
+-- Seperate this gun from g17     deriving fuckign sucjs 
+
 -- include("weapons/arc9_eft_glock17.lua")
 
 SWEP.Base = "arc9_eft_glock17"
@@ -15,6 +17,22 @@ SWEP.Trivia = {
     Year5 = "1989"
 }
 
+SWEP.StandardPresets = {}
+SWEP.StandardPresets[0] = ""
+SWEP.StandardPresets[1] = ""
+SWEP.StandardPresets[2] = ""
+SWEP.StandardPresets[3] = ""
+SWEP.StandardPresets[4] = ""
+SWEP.StandardPresets[5] = ""
+SWEP.StandardPresets[6] = ""
+SWEP.StandardPresets[7] = ""
+SWEP.StandardPresets[8] = ""
+
+SWEP.StandardPresets = {
+    "[Lizzie]XQAAAQAuAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4R/69N18r9zh/d8oSgzitMAI/rMKViVr2H6OV/M/GYal8hVJWN0+DwOXF1+/TTjqjuoUxMClxStWK2xuamthxCAbz0KFr0my0p/wajxdnEQktZhV64jjzQyi2SvfdmhlyB7FDp/sQOhI6kUCcQeYem0nZS8y/R/L3F",
+}
+
+-- fuckk this shit
 SWEP.Description = [[The Glock 18 is a selective-fire variant of the Glock 17. The firearm is typically used with an extended 33-round-capacity magazine, although other magazines from the Glock 17 can be used, with available capacities of 10, 17, or 19 rounds. It has a keyhole opening cut into the forward portion of the slide, similar to the opening on the Glock long-slide models, although the Glock 18 has a standard-length slide. The keyhole opening provides an area to allow the four, progressively larger (from back to front) compensator cuts machined into the barrel to vent the propellant gases upwards, affording more control over the rapid-firing machine pistol.]]
 -- SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
 

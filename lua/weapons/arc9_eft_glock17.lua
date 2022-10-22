@@ -21,6 +21,17 @@ SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_h
 SWEP.Description = [[Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon.]]
 
 
+SWEP.StandardPresets = {
+    "[Fischer]XQAAAQBQAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgcb91iakqlMrwikE707RpnxdBgWQFY91DmijmEzGUSJfoX2frsUQ1HhJXDyqUijjiY3QeIIEywYNB9MypfhwGnyQncLBJnw5+XTP5yJSHNB8FAzAv3gqVYwy0VOxWcg4ZO2x5EyPohOjgsLlpTsD/RQkS580D4w2kWTs=",
+    "[Viper]XQAAAQC5AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzTO9JXXh2nOjnwgDbfgYaXg/a1ZadpfxZpFLA35PwDhvdLrQnpsnrCK4gg4R3IGVIVFlNCNJYdaNwIWrfmqmYa1KE8RR01W0kDDKqRnIA2WXilRvtEIcfP64NC797QxMykgn7WiE3ORl1XqVMD46Fqtd9Udc/CaFWWnxM7FEyf1iA",
+    "[Hex]XQAAAQAyAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzTO9JXXh2nOj1ihHVAjHMMGYSwHHEzJgX1TgrZR59YtumxCy6MqDEBddUE7YJ4tejFnldiiK97z9wMxO/UKeA03MtQ4CiV0aV5+6nam9Te5HV1SeJHGEHxtPbVaAA",
+    "[Spartan]XQAAAQBRAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnGuPMc36cYuksVohKcYJPXuWsYRctTb7lfGb2cNTM1Pp7v3L4dMDZc7v7EnsAzbWGGGPLFgXUk3zFGAkG4zT+hhe8+jH6/3c8ZUruGVHWXAJVAcrt2uuF9Ge9UmeqKdtTAupEpHX0WxzhFSKcHjVBgneUG75BBgA==",
+    "[Tac 2]XQAAAQBjAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyWpZlDIRmXLSSZjgFmz6Fvk71oGnuNNL0jII/382tfhfocyHf9yHbLG7rsRuGlAihV+sFhkaGlDbg49uwwNPD8B15vOVA0zmWpIYy9S1f+8lejz+zUtIgLAzzq/9bFncSVbr6cxm8B3RxDsOD0aYT1SAJmQ7C4S78hSWA==",
+    "[Tac 3]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgcb91iakqlMrwikE707RpnxcxKP+lfacmMZctXNFgIWVvQaWVaHINoYfm7wN2sxTA5AGe0xk9r9FuE7QadG1D8YTwVmMYXnqp845UfpI/cWais5k7Lt3A2Gm0zw/rJBAjN3PITLLbF/2f51BtbdkxAJjCKQA=",
+    "[Unnamed]XQAAAQCRAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyNZut9mFx6Y06gaFPilVbx2vCh4Dv3hspClFG1l1RrvUMZvgOjzGBMIFI0QD/LZzdHAqAXwthpN7ywSbs6JqrVHOggBXMWff1q6ayz6ZC7aiF311js2ITJRGdvMaoL4+jdnSu8BHPnhBI7nqykaDNOS/44i/rStVgxW9gd+vjD0",
+    "[Jackie]XQAAAQA4AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vac/Sp42YrD6OYr93TvMt8cwbqPJ3dK2JwDHa/l28QHRmh63LSTIfhVPnnmKpLXXVu8IkqgSrrFieXhNSVe1E/YmVC/pT7leK7ettLRAY2C4wC0+0xXPucxGGsJHdqCv4fOzU/vRPIKsi4kp2I=",
+}
+
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_glock.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_glock18.mdl"
 
@@ -191,8 +202,8 @@ SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21.7, 15, 4)
-SWEP.CustomizeSnapshotFOV = 49
+SWEP.CustomizePos = Vector(21.7, 19, 4)
+SWEP.CustomizeSnapshotFOV = 80
 
 -------------------------- HoldTypes
 
