@@ -143,7 +143,7 @@ SWEP.VisualRecoilSpringMagnitude = 0.6
 
 SWEP.Spread = 0.004
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
