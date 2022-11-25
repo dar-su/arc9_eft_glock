@@ -38,7 +38,10 @@ SWEP.Description = [[The Glock 18 is a selective-fire variant of the Glock 17. T
 
 SWEP.DefaultBodygroups = "10000000000"
 
-SWEP.Firemodes = { { Mode = -1 }, { Mode = 1 } }
+SWEP.Firemodes = {
+    { Mode = -1, PoseParam = 2},
+    { Mode = 1, PoseParam = 1 }
+}
 SWEP.RPM = 1160
 
 local path = "weapons/darsu_eft/glock/"
