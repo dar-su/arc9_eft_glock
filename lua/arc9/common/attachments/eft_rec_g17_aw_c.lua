@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/slide_awc.png", "mips smooth
 ATT.Description = [[A special version of Glock family pistols’ slide made by Lone Wolf.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_rec"}
 

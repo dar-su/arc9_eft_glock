@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/slide_mos.png", "mips smooth
 ATT.Description = [[The MOS (Modular Optic System) slide designed for Glock 9x19 pistols. Manufactured by Glock.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_rec"}
 

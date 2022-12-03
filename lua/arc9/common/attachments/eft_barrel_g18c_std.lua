@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel_18c.png", "mips smoot
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 18C automatic pistols.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g18c_barrel"}

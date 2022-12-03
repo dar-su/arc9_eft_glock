@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/fstfx.png", "mips smooth")
 ATT.Description = [[A front sight for Glock series pistols with tritium bars for precision aiming, manufactured by TruGlo.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_fs"}

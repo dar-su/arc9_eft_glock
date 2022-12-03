@@ -5,7 +5,7 @@
 SWEP.Base = "arc9_eft_glock17"
 SWEP.Spawnable = true
 SWEP.PrintName = "Glock 18C"
-SWEP.Category = "ARC-9 - Escape From Tarkov"
+SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.Class = "Machine Pistol"
 

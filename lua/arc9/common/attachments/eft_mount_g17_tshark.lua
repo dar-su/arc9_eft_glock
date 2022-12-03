@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/tshark.png", "mips smooth")
 ATT.Description = [[A Glock family sight mount base designed for installation of additional reflex sights on the pistol. Manufactured by Aimtech.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"eft_mount_g17_at_base", "eft_mount_um3"}
 

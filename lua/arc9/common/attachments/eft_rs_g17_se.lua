@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/rsse.png", "mips smooth")
 ATT.Description = [[A rear sight for Glock series pistols with tritium bars for precision aiming, manufactured by Dead Ringer.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_rs.mdl"
 ATT.ModelBodygroups = "3"

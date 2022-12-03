@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/rszt.png", "mips smooth")
 ATT.Description = [[A plus-size rear sight for Glock pistols family, manufactured by ZEV Technologies.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_rs.mdl"
 ATT.ModelBodygroups = "1"

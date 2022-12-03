@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/grip.png", "mips smooth")
 ATT.Description = [[The Pachmayr tactical rubber grip increases the handling and ergonomics of a pistol, designed to fit Glock family pistols.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_pgrip"}

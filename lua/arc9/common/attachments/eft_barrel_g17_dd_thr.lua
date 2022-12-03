@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel_ddthr.png", "mips smo
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Double Diamond.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_barrel"}
 ATT.Attachments = {

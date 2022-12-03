@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/silencer.png", "mips smooth"
 ATT.Description = [[A quick detach sound suppressor for Glock 17 9x19 pistols, manufactured by Fischer Development.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Silencer = true 
 ATT.ExcludeElements = {"eft_muzzle_g17_g4"}

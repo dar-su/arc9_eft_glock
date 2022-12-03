@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/stock.png", "mips smooth")
 ATT.Description = [[The GLR-17 telescoping buttstock, manufactured by FAB Defense. Designed to fit Glock-family pistols.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_stock"}

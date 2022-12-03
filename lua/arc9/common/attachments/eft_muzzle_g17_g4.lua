@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/g4.png", "mips smooth")
 ATT.Description = [[A unique compensator for Glock family pistols which can be mounted on a slide and not require a threaded barrel, manufactured by Strike Industries.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_g4"}

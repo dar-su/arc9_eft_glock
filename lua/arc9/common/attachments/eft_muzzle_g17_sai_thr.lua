@@ -4,6 +4,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/thr_sai.png", "mips smooth")
 ATT.Description = [[A thread protector for threaded barrels of Glock family pistols, manufactured by Salient Arms International.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}

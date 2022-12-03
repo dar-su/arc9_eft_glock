@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/bullnose.png", "mips smooth"
 ATT.Description = [[The Alpha Wolf compensator manufactured by Lone Wolf. Can only be installed with the slides that have the bullnosed slide face.]]
 
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - EFT Attachments"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"eft_rec_g17_std", "eft_rec_g17_motocut", "eft_rec_g17_vipercut", "eft_rec_g17_aw", "eft_rec_g17_zt_hex", "eft_rec_g17_ps9", "eft_rec_g17_zt_spartan", "eft_rec_g17_mos"}
 
