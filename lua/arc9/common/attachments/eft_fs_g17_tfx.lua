@@ -6,4 +6,7 @@ ATT.Description = [[A front sight for Glock series pistols with tritium bars for
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_fs.mdl"
+ATT.ModelBodygroups = "2"
+
 ATT.Category = {"eft_g17_fs"}

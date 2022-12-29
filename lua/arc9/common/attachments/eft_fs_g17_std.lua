@@ -6,4 +6,7 @@ ATT.Description = [[A standard-issue front sight for the Glock pistol.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_fs.mdl"
+ATT.ModelBodygroups = "0"
+
 ATT.Category = {"eft_g17_fs"}

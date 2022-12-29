@@ -77,7 +77,11 @@ SWEP.DropMagazineSounds = {
     "eft_shared/weap_magdrop_plastic.wav"
 } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.5
+SWEP.DropMagazineTime = 0.26
+SWEP.DropMagazineQCA = 4
+SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazineAng = Angle(90, 90, 90)
+SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
 SWEP.Overheat = true
 SWEP.HeatCapacity = 75
@@ -92,11 +96,11 @@ SWEP.Firemodes = { { Mode = 1 } }
 
 -- General recoil multiplier
 SWEP.Recoil = 1
-SWEP.ViewRecoil = true
-SWEP.ViewRecoilUpMult = 250
+SWEP.ViewRecoil = false
+SWEP.ViewRecoilUpMult = 2000
 SWEP.ViewRecoilSideMult = 300
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.1 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -104,10 +108,10 @@ SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.06
 SWEP.RecoilRandomSide = 0.01
 
-SWEP.RecoilDissipationRate = 0.1 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 0.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.4
 SWEP.FirstShootRecoilUp = 2
@@ -120,14 +124,16 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 0.9
 
-SWEP.VisualRecoilUp = 6.1 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilUp = 4 -- Vertical tilt for visual recoil.
 SWEP.VisualRecoilSide = 0.03 -- Horizontal tilt for visual recoil.
-SWEP.VisualRecoilRoll = 1 -- Roll tilt for visual recoil.
+SWEP.VisualRecoilRoll = 8 -- Roll tilt for visual recoil.
 
 SWEP.VisualRecoilCenter = Vector(2, 16, 2) -- The "axis" of visual recoil. Where your hand is.
 
-SWEP.VisualRecoilPunch = 5 -- How far back visual recoil moves the gun.
+SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
 SWEP.VisualRecoilPunchMultSights = 0.5
+
+SWEP.VisualRecoilPositionBump = 1
 
 
 SWEP.VisualRecoilHipFire = 1
@@ -250,9 +256,9 @@ SWEP.CamQCA_Mult_ADS = 0.05 -- Intensity for QC camera movement in ADS.
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     [1] = "patron_in_weapon",
-    [2] = "patron_in_mag0",
-    [3] = "patron_in_mag1",
-    [4] = "patron_in_mag2"
+    [2] = "patron_in_mag1",
+    [3] = "patron_in_mag2",
+    [4] = "patron_in_mag3"
 }
 
 -------------------------- SOUNDS
@@ -286,10 +292,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- local rand = 0
     local nomag = false
 
-    if elements["eft_mag_g17_std_17"]           then ending = 0
-    elseif elements["eft_mag_g17_gl9_21"]       then ending = 1
-    elseif elements["eft_mag_g17_bigstick_33"]  then ending = 2
-    elseif elements["eft_mag_g17_sgmt_50"]      then ending = 3
+    if elements["eft_mag_g17_std_17"] or elements["eft_mag_g19x_std_21"] then ending = 0
+    elseif elements["eft_mag_g17_gl9_21"] or elements["eft_mag_g19x"] then ending = 1
+    elseif elements["eft_mag_g17_bigstick_33"] or elements["eft_mag_bigstick24"] or elements["eft_mag_bigstick31"]  then ending = 2
+    elseif elements["eft_mag_g17_sgmt_50"] then ending = 3
     else nomag = true end
 
     local empty = swep:Clip1() == 0 and !nomag
@@ -351,22 +357,22 @@ local rst_single = {
 local rst_def = {
     { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 0.16 },    
     { s =  path .. "kedr_fireselector_up.wav", t = 0.43 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.48 },
+    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.38 },
     { s = "eft_shared/weap_magin_sbrosnik.wav", t = 1.1 },
-    { s =  path .. "mpx_weap_magin_plastic.wav", t = 1.54 },
-    { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.13 },
+    { s =  path .. "mpx_weap_magin_plastic.wav", t = 2.1 },
+    { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.4 },
 }
 
 local rst_empty = {
     { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 0.12 },    
-    { s =  path .. "kedr_fireselector_up.wav", t = 0.41 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.48 },
+    { s =  path .. "kedr_fireselector_up.wav", t = 0.21 }, -- eft devs redarded
+    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.38 },
     { s = "eft_shared/weap_magin_sbrosnik.wav", t = 0.92 },
     { s =  "eft_shared/weapon_generic_rifle_spin2.wav", t = 1.25 },
-    { s =  path .. "mpx_weap_magin_plastic.wav", t = 1.64 },
-    { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 2.23 },  
-    { s =  path .. "pm_catch_slider.wav", t = 2.6 },
-    { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.92 },
+    { s =  path .. "mpx_weap_magin_plastic.wav", t = 1.34 },
+    { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 1.53 },  
+    { s =  path .. "pm_catch_slider.wav", t = 2.15 },
+    { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.3 },
 }
 
 local rst_magcheck = {
@@ -376,7 +382,7 @@ local rst_magcheck = {
     { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 0.92 },
     { s = "eft_shared/weapon_generic_rifle_spin7.wav", t = 1.87 },
     { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.38 },
-    { s =  path .. "mpx_weap_magin_plastic.wav", t = 3.05 },
+    { s =  path .. "mpx_weap_magin_plastic.wav", t = 2.9 },
     { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 3.39 },
 }
 
@@ -697,10 +703,10 @@ SWEP.AttachmentElements = {
     ["eft_rec_g17_zt_hex"]    = { Bodygroups = { {1, 4} } },
     ["eft_rec_g17_zt_spartan"]    = { Bodygroups = { {1, 3} } },
 
-    ["eft_fs_g17_se"]    = { Bodygroups = { {8, 4} } },
-    ["eft_fs_g17_std"]    = { Bodygroups = { {8, 1} } },
-    ["eft_fs_g17_tfx"]    = { Bodygroups = { {8, 3} } },
-    ["eft_fs_g17_zt"]    = { Bodygroups = { {8, 2} } },
+    -- ["eft_fs_g17_se"]    = { Bodygroups = { {8, 4} } },
+    -- ["eft_fs_g17_std"]    = { Bodygroups = { {8, 1} } },
+    -- ["eft_fs_g17_tfx"]    = { Bodygroups = { {8, 3} } },
+    -- ["eft_fs_g17_zt"]    = { Bodygroups = { {8, 2} } },
 
     ["eft_muzzle_g17_g4"]    = { Bodygroups = { {3, 1} } },
     ["eft_muzzle_g17_3port"]    = { Bodygroups = { {3, 7} } },
@@ -712,7 +718,7 @@ SWEP.AttachmentElements = {
     ["eft_muzzle_g17_sai_thr"]    = { Bodygroups = { {3, 2} } },
     ["eft_muzzle_g17_lwd_comp9"]    = { Bodygroups = { {3, 3} } },
 
-    ["eft_silencer_fd917"]    = { Bodygroups = { {10, 1} } },
+    ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
     ["eft_stock_g17_glr17"]    = { Bodygroups = { {5, 1} } },
     ["eft_pgrip_g17_tgg"]    = { Bodygroups = { {4, 1} } },
     ["eft_mount_g17_at_base"]    = { Bodygroups = { {6, 1} } },

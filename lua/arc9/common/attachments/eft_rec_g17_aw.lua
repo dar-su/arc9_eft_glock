@@ -12,8 +12,9 @@ ATT.Attachments = {
     {
         PrintName = "Front sight",
         Category = "eft_g17_fs",
-        Pos = Vector(0, 4.55, -0.3),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
     },
     {
         PrintName = "Rear sight",
