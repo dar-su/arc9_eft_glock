@@ -3,6 +3,7 @@ ATT.CompactName = "G DD thr."
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_ddthr.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Double Diamond.]]
 
+ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

@@ -699,6 +699,21 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.missingpartsnotifsent = 0
+
+function SWEP:HookP_BlockFire()
+    if  !self:GetValue("HasBarrel") or 
+        !self:GetValue("HasSlide") then
+            
+            if self.missingpartsnotifsent < CurTime() then
+                self.missingpartsnotifsent = CurTime() + 3
+                net.Start("arc9eftmissingparts")
+                net.Send(self:GetOwner())
+            end
+            return true 
+    end
+end
+
 SWEP.AttachmentElements = {
     -- ["eft_barrel_g17_aw"]    = { Bodygroups = { {2, 5} } },
     -- ["eft_barrel_g17_comp"]    = { Bodygroups = { {2, 2} } },
@@ -731,11 +746,11 @@ SWEP.AttachmentElements = {
     -- ["eft_muzzle_g17_sai_thr"]    = { Bodygroups = { {3, 2} } },
     -- ["eft_muzzle_g17_lwd_comp9"]    = { Bodygroups = { {3, 3} } },
 
-    -- ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
-    -- ["eft_stock_g17_glr17"]    = { Bodygroups = { {5, 1} } },
+    ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
+    ["eft_stock_g17_glr17"]    = { Bodygroups = { {5, 1} } },
     -- ["eft_pgrip_g17_tgg"]    = { Bodygroups = { {4, 1} } },
-    -- ["eft_mount_g17_at_base"]    = { Bodygroups = { {6, 1} } },
-    -- ["eft_mount_g17_tshark"]    = { Bodygroups = { {6, 2} } },
+    ["eft_mount_g17_at_base"]    = { Bodygroups = { {6, 1} } },
+    ["eft_mount_g17_tshark"]    = { Bodygroups = { {6, 2} } },
     -- ["eft_tac_g17_tangodown"]    = { Bodygroups = { {7, 1} } },
     -- ["eft_tac_g17_zt_cap"]    = { Bodygroups = { {7, 2} } },
     
@@ -743,6 +758,8 @@ SWEP.AttachmentElements = {
     -- ["eft_rec_g18c_std"]    = { Bodygroups = { {1, 2} } },
     ["eft_barrel_g19x_std"]    = { Bodygroups = { {2, 7} } },
     ["eft_rec_g19x_std"]    = { Bodygroups = { {1, 11} } },
+    ["eft_rec_g19x_black"]    = { Bodygroups = { {1, 12} } },
+    ["eft_glock_black"] = { Skin = 1 },
 }
 
 SWEP.Attachments = {
@@ -778,7 +795,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, -0.4, 0),
-        Installed = "eft_mag_g17_std_17"
+        Installed = "eft_mag_g19x"
     },    
     {
         PrintName = "Tactical",
@@ -796,14 +813,14 @@ SWEP.Attachments = {
         Ang = Angle(90, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
     },
-    {
-        PrintName = "Pistol grip",
-        Bone = "weapon",
-        Category = "eft_g17_pgrip",
-        Pos = Vector(0, 18.9, -2.8),
-        Ang = Angle(90, -90, 90),
-        Icon_Offset = Vector(0, 0, 0),
-    },
+    -- {
+    --     PrintName = "Pistol grip",
+    --     Bone = "weapon",
+    --     Category = "eft_g17_pgrip",
+    --     Pos = Vector(0, 16.5, -2.8),
+    --     Ang = Angle(90, -90, 90),
+    --     Icon_Offset = Vector(0, 0, 0),
+    -- },
     {
         PrintName = "Mount",
         Bone = "weapon",
@@ -811,5 +828,13 @@ SWEP.Attachments = {
         Pos = Vector(0, 17.6, -1),
         Ang = Angle(90, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
+    },
+
+    {
+        PrintName = "Coyote",
+        Category = "eft_glock19_color",
+        Bone = "weapon",
+        Pos = Vector(0, 15, -2),
+        Ang = Angle(0, 0, 0),
     },
 }

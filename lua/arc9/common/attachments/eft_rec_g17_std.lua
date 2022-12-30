@@ -3,6 +3,7 @@ ATT.CompactName = "Glock"
 ATT.Icon = Material("entities/eft_glock_attachments/slide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for Glock 9x19 pistols.]]
 
+ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

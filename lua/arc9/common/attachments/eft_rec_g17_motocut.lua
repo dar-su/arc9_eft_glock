@@ -3,6 +3,7 @@ ATT.CompactName = "G MotoCut"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_motocut.png", "mips smooth")
 ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 
+ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

@@ -698,6 +698,21 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.missingpartsnotifsent = 0
+
+function SWEP:HookP_BlockFire()
+    if  !self:GetValue("HasBarrel") or 
+        !self:GetValue("HasSlide") then
+            
+            if self.missingpartsnotifsent < CurTime() then
+                self.missingpartsnotifsent = CurTime() + 3
+                net.Start("arc9eftmissingparts")
+                net.Send(self:GetOwner())
+            end
+            return true 
+    end
+end
+
 SWEP.AttachmentElements = {
     ["eft_barrel_g17_aw"]    = { Bodygroups = { {2, 5} } },
     ["eft_barrel_g17_comp"]    = { Bodygroups = { {2, 2} } },

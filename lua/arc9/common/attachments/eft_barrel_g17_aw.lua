@@ -3,6 +3,7 @@ ATT.CompactName = "G AW"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_aw.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of the Glock family. Manufactured by Lone Wolf.]]
 
+ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

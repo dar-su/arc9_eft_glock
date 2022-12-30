@@ -3,6 +3,7 @@ ATT.CompactName = "G17 comp"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_comp.png", "mips smooth")
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 17 pistols.]]
 
+ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

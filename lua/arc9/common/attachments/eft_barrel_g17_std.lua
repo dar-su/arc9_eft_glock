@@ -3,6 +3,7 @@ ATT.CompactName = "G17"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard barrel for the Glock 17 9x19 pistol.]]
 
+ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
