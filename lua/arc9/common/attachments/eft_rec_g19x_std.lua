@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 19X 9x19 pistol slide"
 ATT.CompactName = "G19X"
-ATT.Icon = Material("entities/eft_glock_attachments/slide18c.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/g19xslide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide surfaces are treated with an advanced nPVD coating that protects the steel from corrosion, chemical attack and harsh environmental conditions.]]
 
 ATT.SortOrder = 0

@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 \"Big Stick\" 24-round magazine (Coyote)"
 ATT.CompactName = "Big Stick"
-ATT.Icon = Material("entities/eft_glock_attachments/mag.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/bs24.png", "mips smooth")
 ATT.Description = [[A factory-produced 24-round 9x19 magazine for Glock pistols. Coyote version.]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"

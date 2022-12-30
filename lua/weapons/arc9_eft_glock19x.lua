@@ -79,9 +79,9 @@ SWEP.DropMagazineSounds = {
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.26
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
-SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
+SWEP.DropMagazineAng = Angle(90, 180, 90)
+SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
 SWEP.Overheat = true
 SWEP.HeatCapacity = 75
@@ -124,7 +124,7 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 0.9
 
-SWEP.VisualRecoilUp = 4 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilUp = 3.5 -- Vertical tilt for visual recoil.
 SWEP.VisualRecoilSide = 0.03 -- Horizontal tilt for visual recoil.
 SWEP.VisualRecoilRoll = 8 -- Roll tilt for visual recoil.
 
@@ -134,6 +134,7 @@ SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
 SWEP.VisualRecoilPunchMultSights = 0.5
 
 SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.01
 
 
 SWEP.VisualRecoilHipFire = 1
@@ -208,8 +209,8 @@ SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21.7, 19, 4)
-SWEP.CustomizeSnapshotFOV = 80
+SWEP.CustomizePos = Vector(21.7, 19, 4.5)
+SWEP.CustomizeSnapshotFOV = 70
 
 -------------------------- HoldTypes
 
@@ -345,6 +346,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- print("nomag:", nomag, "rand:", rand, "anim:", anim, "ending:", ending)
 end
 
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mod_magazine",
+        "patron_in_mag1",
+        "patron_in_mag2",
+        "patron_in_mag3"
+    },
+}
 
 local rst_single = {
     { s = "eft_shared/weap_round_pullout.wav", t = 0.15 },
@@ -374,6 +383,9 @@ local rst_empty = {
     { s = "eft_shared/weapon_generic_rifle_spin10.wav", t = 1.53 },  
     { s =  path .. "pm_catch_slider.wav", t = 2.15 },
     { s = "eft_shared/weapon_generic_rifle_spin2.wav", t = 2.3 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.4},
+    {hide = 0, t = 0.6}
 }
 
 local rst_magcheck = {

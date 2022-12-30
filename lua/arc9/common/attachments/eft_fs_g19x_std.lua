@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 19X front sight"
 ATT.CompactName = "G19X FS"
-ATT.Icon = Material("entities/eft_glock_attachments/fs.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/g19xfs.png", "mips smooth")
 ATT.Description = [[A standard-issue front sight for the Glock 19X pistol.]]
 
 ATT.SortOrder = 0

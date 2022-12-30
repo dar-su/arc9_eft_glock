@@ -1,6 +1,6 @@
 ATT.PrintName = "Glock 9x19 19-round magazine (Coyote)"
 ATT.CompactName = "G19X"
-ATT.Icon = Material("entities/eft_glock_attachments/mag.png", "mips smooth")
+ATT.Icon = Material("entities/eft_glock_attachments/g19xmag.png", "mips smooth")
 ATT.Description = [[A 19-round 9x19 magazine for Glock 19X pistols. Coyote version..]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
