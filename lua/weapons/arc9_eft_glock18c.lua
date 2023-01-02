@@ -4,6 +4,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
+SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "Glock 18C"
 
@@ -33,6 +34,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 -- SWEP.DefaultBodygroups = "0001110101101"
 SWEP.DefaultBodygroups = "10000000000"
+SWEP.BarrelLength = 25
 
 SWEP.SpreadMultHipFire = 5
 SWEP.RecoilMultHipFire = 1.1
@@ -92,9 +94,9 @@ SWEP.RPM = 1160
 
 -- General recoil multiplier
 SWEP.Recoil = 1
-SWEP.ViewRecoil = false
-SWEP.ViewRecoilUpMult = 2000
-SWEP.ViewRecoilSideMult = 300
+SWEP.RecoilCrouchMult = 0.5
+SWEP.VisualRecoilCrouchMult = 0.5
+
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
@@ -110,35 +112,35 @@ SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil patter
 SWEP.RecoilAutoControl = 5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.4
-SWEP.FirstShootRecoilUp = 2
 
 
 
 
 SWEP.UseVisualRecoil = true 
 
-SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultSights = 0.9
+SWEP.VisualRecoil = 0.75
+SWEP.VisualRecoilMultSights = 0.5
+SWEP.VisualRecoilHipFire = 0.65
 
-SWEP.VisualRecoilUp = 3.5 -- Vertical tilt for visual recoil.
-SWEP.VisualRecoilSide = 0.03 -- Horizontal tilt for visual recoil.
-SWEP.VisualRecoilRoll = 8 -- Roll tilt for visual recoil.
+SWEP.VisualRecoilUp = 35 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 35 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 6 -- Roll tilt for visual recoil.
 
 SWEP.VisualRecoilCenter = Vector(2, 16, 2) -- The "axis" of visual recoil. Where your hand is.
 
-SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
+SWEP.VisualRecoilPunch = 2 -- How far back visual recoil moves the gun.
 SWEP.VisualRecoilPunchMultSights = 0.5
+SWEP.VisualRecoilPositionBumpUp = -0.01
 
-SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.01
+SWEP.VisualRecoilSpringPunchDamping = 12
+SWEP.VisualRecoilDampingConst = 260
+SWEP.VisualRecoilSpringMagnitude = 1
 
 
-SWEP.VisualRecoilHipFire = 1
 
 SWEP.RecoilKick = 0.05 -- Camera recoil
 SWEP.RecoilKickDamping = 10 -- Camera recoil damping
-SWEP.VisualRecoilDampingConst = 70 -- How spring will be visual recoil, 120 is default
-SWEP.VisualRecoilSpringMagnitude = 0.6
+
 
 
 
@@ -149,6 +151,11 @@ SWEP.Spread = 0.004
 SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
+
+
+SWEP.Malfunction = true 
+SWEP.MalfunctionNeverLastShoot = true 
+SWEP.MalfunctionMeanShotsToFail = 333
 
 SWEP.FreeAimRadius = 1 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0.75 + 1 -- How much the gun sways.
@@ -162,7 +169,7 @@ SWEP.FreeAimRadiusSights = 0
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.33 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.1 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
