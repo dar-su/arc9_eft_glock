@@ -52,7 +52,7 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- rand = 4
 
-        if ARC9EFTBASE then
+        if SERVER and ARC9EFTBASE then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -259,7 +259,7 @@ ARC9EFT.Glock_Anims = {
             { s =  path .. "pm_slider_out.wav", t = 2.12 },
             { s = randspin, t = 2.51 },
         },
-        EjectAt = 1.97
+        -- EjectAt = 1.97
     },        
     
     ["jam3"] = {
@@ -297,7 +297,7 @@ ARC9EFT.Glock_Anims = {
             { s =  path .. "grach_slider_in.wav", t = 3.35 },
             { s = randspin, t = 3.81 },
         },
-        EjectAt = 2.52
+        -- EjectAt = 2.52
     },        
     
     ["jam4"] = {
