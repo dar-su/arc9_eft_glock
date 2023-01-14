@@ -5,6 +5,10 @@ ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide 
 
 Not presents in EFT, custom att.]]
 
+-- ATT.VisualRecoilMult = 0.99
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

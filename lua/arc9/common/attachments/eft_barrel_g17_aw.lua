@@ -7,6 +7,11 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+ATT.VisualRecoilMult = 0.96
+ATT.PhysBulletMuzzleVelocityMult = 0.97
+
 ATT.Category = {"eft_g17_barrel"}
 
 ATT.Attachments = {

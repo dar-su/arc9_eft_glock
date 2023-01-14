@@ -11,6 +11,11 @@ ATT.ExcludeElements = {"eft_muzzle_g17_g4"}
 
 ATT.Category = {"eft_g17_tac"}
 
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.MuzzleEffectQCA = 5
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+
 ATT.Attachments = {
     {
         PrintName = "Tactical",

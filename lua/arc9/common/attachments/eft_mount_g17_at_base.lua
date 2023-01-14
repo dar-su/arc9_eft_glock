@@ -3,6 +3,9 @@ ATT.CompactName = "G AT base"
 ATT.Icon = Material("entities/eft_glock_attachments/atbase.png", "mips smooth")
 ATT.Description = [[A sight mount base for Glock pistols, allows additional installation of reflex sights on the Weaver-type rail. Manufactured by Aimtech.]]
 
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

@@ -3,6 +3,11 @@ ATT.CompactName = "G SAI"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_sai.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Salient Arms International.]]
 
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.VisualRecoilMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 0.987
+
 ATT.HasBarrel = true 
 -- ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

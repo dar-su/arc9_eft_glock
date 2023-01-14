@@ -3,6 +3,11 @@ ATT.CompactName = "G19X"
 ATT.Icon = Material("entities/eft_glock_attachments/g19xbarrel.png", "mips smooth")
 ATT.Description = [[A standard barrel for the Glock 19X 9x19 pistol. The barrel is treated with an nDLC coating that protects against corrosion and scratches.]]
 
+ATT.EFTErgoAdd = -5
+ATT.CustomCons = { Ergonomics = "-5" }
+ATT.VisualRecoilMult = 0.97
+ATT.PhysBulletMuzzleVelocityMult = 0.977
+
 ATT.HasBarrel = true 
 
 ATT.SortOrder = 0

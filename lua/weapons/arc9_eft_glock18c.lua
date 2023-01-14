@@ -29,7 +29,7 @@ SWEP.StandardPresets = {
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_glock.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_glock18.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
 -- SWEP.DefaultBodygroups = "0001110101101"
@@ -93,7 +93,7 @@ SWEP.RPM = 1160
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.06
 SWEP.RecoilCrouchMult = 0.5
 SWEP.VisualRecoilCrouchMult = 0.5
 
@@ -135,7 +135,7 @@ SWEP.VisualRecoilPositionBumpUp = -0.01
 SWEP.VisualRecoilSpringPunchDamping = 12
 SWEP.VisualRecoilDampingConst = 260
 SWEP.VisualRecoilSpringMagnitude = 1
-
+SWEP.NoMuzzleEffect  = true
 
 
 SWEP.RecoilKick = 0.05 -- Camera recoil
@@ -155,7 +155,7 @@ SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = true 
-SWEP.MalfunctionMeanShotsToFail = 333
+SWEP.MalfunctionMeanShotsToFail = 333*2
 
 SWEP.FreeAimRadius = 1 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0.75 + 1 -- How much the gun sways.
@@ -206,13 +206,12 @@ SWEP.ActivePos = Vector(-0.45, -1.8, -.45)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintAng = Angle(0, 20.6,  -15.2)
-SWEP.SprintPos = Vector(0.5, -1.1, -13.5)
-
+SWEP.SprintPos = Vector(0.5, -5.1, -13.5)
 SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
 SWEP.CrouchAng = Angle(0, 0, -1)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21.7, 19, 4.5)
+SWEP.CustomizePos = Vector(21.7, 25, 3.5)
 SWEP.CustomizeSnapshotFOV = 70
 
 -------------------------- HoldTypes
@@ -275,9 +274,9 @@ SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.wav", path .. "glo
 SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.wav", path .. "glock18_indoor_distant_2.wav" }
 
 SWEP.ShootSoundSilenced = { path .. "glock17_close_silenced.wav", path .. "glock17_close_silenced2.wav" }
-SWEP.ShootSoundIndoorSilenced = path .. "glock17_indoor_close_silenced.wav"
+SWEP.ShootSoundSilencedIndoor = path .. "glock17_indoor_close_silenced.wav"
 SWEP.DistantShootSoundSilenced = path .. "glock17_distant_silenced.wav"
-SWEP.DistantShootSoundIndoorSilenced = path .. "glock17_indoor_distant_silenced.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "glock17_indoor_distant_silenced.wav"
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = ""-- we will have own in sound tables
@@ -429,3 +428,10 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+SWEP.EFTErgo = 90
+if ARC9EFTBASE then
+    SWEP.AimDownSightsTimeHook = ARC9EFT.ErgoHook
+else
+    print("Dum! install arc9 eft shared!!!!!!!!!!!!!!")
+end

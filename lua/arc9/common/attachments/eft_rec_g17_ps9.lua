@@ -3,6 +3,10 @@ ATT.CompactName = "G PS9"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_ps9.png", "mips smooth")
 ATT.Description = [[The PS9 slide for Glock family pistols, manufactured by Polymer80.]]
 
+ATT.VisualRecoilMult = 0.98
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

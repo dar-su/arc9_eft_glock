@@ -3,6 +3,10 @@ ATT.CompactName = "G19X"
 ATT.Icon = Material("entities/eft_glock_attachments/g19xslide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide surfaces are treated with an advanced nPVD coating that protects the steel from corrosion, chemical attack and harsh environmental conditions.]]
 
+-- ATT.VisualRecoilMult = 0.99
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

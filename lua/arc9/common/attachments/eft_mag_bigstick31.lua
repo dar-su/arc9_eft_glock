@@ -5,6 +5,11 @@ ATT.Description = [[A factory-produced 31-round 9x19 magazine for Glock pistols.
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.EFTErgoAdd = -5
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.CustomCons = { Ergonomics = "-5" }
+ATT.MalfunctionMeanShotsToFailMult = 0.85
+
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_31.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_31.mdl"
 ATT.ChamberSize = 1

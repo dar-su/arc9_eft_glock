@@ -3,6 +3,9 @@ ATT.CompactName = "G ZT cap"
 ATT.Icon = Material("entities/eft_glock_attachments/ztcap.png", "mips smooth")
 ATT.Description = [[A protective steel cap covering the mount for reflex sights, manufactured by ZEV Technologies.]]
 
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 

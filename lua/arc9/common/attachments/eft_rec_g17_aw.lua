@@ -3,6 +3,10 @@ ATT.CompactName = "G AW"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_aw.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by Lone Wolf.]]
 
+ATT.VisualRecoilMult = 0.99
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
