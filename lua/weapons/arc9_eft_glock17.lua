@@ -100,9 +100,7 @@ SWEP.Firemodes = { { Mode = 1 } }
 SWEP.Recoil = 1
 SWEP.RecoilCrouchMult = 0.5
 SWEP.VisualRecoilCrouchMult = 0.5
-SWEP.ViewRecoil = false
-SWEP.ViewRecoilUpMult = 2000
-SWEP.ViewRecoilSideMult = 300
+
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
@@ -123,8 +121,8 @@ SWEP.RecoilKick = 0.4
 
 SWEP.UseVisualRecoil = true 
 
-SWEP.VisualRecoil = 0.85*1.03
-SWEP.VisualRecoilMultSights = 0.5
+SWEP.VisualRecoil = 0.72
+SWEP.VisualRecoilMultSights = 0.7
 
 SWEP.VisualRecoilUp = 40 -- Vertical tilt for visual recoil.
 SWEP.VisualRecoilSide = 35 -- Horizontal tilt for visual recoil.

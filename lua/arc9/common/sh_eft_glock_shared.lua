@@ -29,7 +29,6 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
         end
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
-        rand = 2
 
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
@@ -234,15 +233,19 @@ ARC9EFT.Glock_Anims = {
 
     ["toggle"] = {
         Source = "mod_switch",
-        EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = {{ s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },}
     },
     ["switchsights"] = {
         Source = "mod_switch",
-        EventTable = {
-            { s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = {{ s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },}
+    },
+    ["toggle_empty"] = {
+        Source = "mod_switch_empty",
+        EventTable = {{ s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },}
+    },
+    ["switchsights_empty"] = {
+        Source = "mod_switch_empty",
+        EventTable = {{ s = {"arc9_eft_shared/weapon_light_switcher1.wav", "arc9_eft_shared/weapon_light_switcher2.wav", "arc9_eft_shared/weapon_light_switcher3.wav"}, t = 0 },}
     },
 
 
