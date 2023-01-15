@@ -133,7 +133,6 @@ SWEP.VisualRecoilPositionBumpUp = -0.01
 SWEP.VisualRecoilSpringPunchDamping = 12
 SWEP.VisualRecoilDampingConst = 260
 SWEP.VisualRecoilSpringMagnitude = 1
-SWEP.NoMuzzleEffect  = true
 
 
 SWEP.RecoilKick = 0.05 -- Camera recoil
@@ -153,7 +152,7 @@ SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 SWEP.Malfunction = true 
 SWEP.MalfunctionNeverLastShoot = true 
-SWEP.MalfunctionMeanShotsToFail = 333*2
+SWEP.MalfunctionMeanShotsToFail = 244*2
 
 SWEP.FreeAimRadius = 1 / 1.25 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0.75 + 1 -- How much the gun sways.

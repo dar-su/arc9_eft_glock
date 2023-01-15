@@ -345,7 +345,7 @@ SWEP.AttachmentElements = {
     -- ["eft_muzzle_g17_sai_thr"]    = { Bodygroups = { {3, 2} } },
     -- ["eft_muzzle_g17_lwd_comp9"]    = { Bodygroups = { {3, 3} } },
 
-    ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
+    -- ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
     ["eft_stock_g17_glr17"]    = { Bodygroups = { {5, 1} } },
     -- ["eft_pgrip_g17_tgg"]    = { Bodygroups = { {4, 1} } },
     ["eft_mount_g17_at_base"]    = { Bodygroups = { {6, 1} } },
@@ -400,6 +400,7 @@ SWEP.Attachments = {
         PrintName = "Tactical",
         Bone = "weapon",
         Category = {"eft_tactical_pistol", "eft_um3", "eft_g17_tac"},
+        RejectAttachments = { ["eft_silencer_fd917"] = true },
         Pos = Vector(0, 23.3, -0.47),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
