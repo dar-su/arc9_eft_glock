@@ -23,14 +23,14 @@ SWEP.Description = [[Glock 17 is an Austrian pistol designed by Glock company fo
 
 
 SWEP.StandardPresets = {
-    "[Fischer]XQAAAQBQAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgcb91iakqlMrwikE707RpnxdBgWQFY91DmijmEzGUSJfoX2frsUQ1HhJXDyqUijjiY3QeIIEywYNB9MypfhwGnyQncLBJnw5+XTP5yJSHNB8FAzAv3gqVYwy0VOxWcg4ZO2x5EyPohOjgsLlpTsD/RQkS580D4w2kWTs=",
-    "[Viper]XQAAAQC5AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzTO9JXXh2nOjnwgDbfgYaXg/a1ZadpfxZpFLA35PwDhvdLrQnpsnrCK4gg4R3IGVIVFlNCNJYdaNwIWrfmqmYa1KE8RR01W0kDDKqRnIA2WXilRvtEIcfP64NC797QxMykgn7WiE3ORl1XqVMD46Fqtd9Udc/CaFWWnxM7FEyf1iA",
-    "[Hex]XQAAAQAyAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzTO9JXXh2nOj1ihHVAjHMMGYSwHHEzJgX1TgrZR59YtumxCy6MqDEBddUE7YJ4tejFnldiiK97z9wMxO/UKeA03MtQ4CiV0aV5+6nam9Te5HV1SeJHGEHxtPbVaAA",
-    "[Spartan]XQAAAQBRAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnGuPMc36cYuksVohKcYJPXuWsYRctTb7lfGb2cNTM1Pp7v3L4dMDZc7v7EnsAzbWGGGPLFgXUk3zFGAkG4zT+hhe8+jH6/3c8ZUruGVHWXAJVAcrt2uuF9Ge9UmeqKdtTAupEpHX0WxzhFSKcHjVBgneUG75BBgA==",
-    "[Tac 2]XQAAAQBjAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyWpZlDIRmXLSSZjgFmz6Fvk71oGnuNNL0jII/382tfhfocyHf9yHbLG7rsRuGlAihV+sFhkaGlDbg49uwwNPD8B15vOVA0zmWpIYy9S1f+8lejz+zUtIgLAzzq/9bFncSVbr6cxm8B3RxDsOD0aYT1SAJmQ7C4S78hSWA==",
-    "[Tac 3]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgcb91iakqlMrwikE707RpnxcxKP+lfacmMZctXNFgIWVvQaWVaHINoYfm7wN2sxTA5AGe0xk9r9FuE7QadG1D8YTwVmMYXnqp845UfpI/cWais5k7Lt3A2Gm0zw/rJBAjN3PITLLbF/2f51BtbdkxAJjCKQA=",
-    "[Unnamed]XQAAAQCRAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyNZut9mFx6Y06gaFPilVbx2vCh4Dv3hspClFG1l1RrvUMZvgOjzGBMIFI0QD/LZzdHAqAXwthpN7ywSbs6JqrVHOggBXMWff1q6ayz6ZC7aiF311js2ITJRGdvMaoL4+jdnSu8BHPnhBI7nqykaDNOS/44i/rStVgxW9gd+vjD0",
-    "[Jackie]XQAAAQA4AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vac/Sp42YrD6OYr93TvMt8cwbqPJ3dK2JwDHa/l28QHRmh63LSTIfhVPnnmKpLXXVu8IkqgSrrFieXhNSVe1E/YmVC/pT7leK7ettLRAY2C4wC0+0xXPucxGGsJHdqCv4fOzU/vRPIKsi4kp2I=",
+    "[Fischer]XQAAAQBxAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgP5RYdFbu5wAX5tswKHJS88CFC+2CJwglayWUAS5d13UsUteCr0ZN7C93W2QGZoDMtt9pQ10waeeBxqrb76HZc/c2usoupOfMU7KnCDTqfBbJFVobkn55FyyVCm/d1Ju0lt+oO9khUqbtv9x87fQTv06yAEFEqmko6zfJV9gNkrsA",
+    "[Viper]XQAAAQD4AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzix6SpbBQywbvvlQz1e2I1BHPy2Pfac+cdxO1KC8gUX4aK2J5FKws5Ccph1BxuGZa22YNzwK5sWBmkoTXXvDYGc8xnodlnluu0jFIDacWPR5CenP99V1AfO3ctBqxeB/QSsXFGpkLJFrTMmp+Ut8HZ5mHZzN+I7hdx7H+sasd6laJBLC2GkeyTZ9divj32+6W5WzgYqRbgA==",
+    "[Hex]XQAAAQBqAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vacnedwoly66c4ZoSw9QHOJ80JK1Z4gOsBzix6SpbBQywb0skuUhu1uPnbPqGvosJ4dHxV/re70nijy9c2T9CnPPOx4sMrhcaHpoAu42IDOAr3jukb+ME0aDQMYWchWRQlOjncds/a5EggYOWvFpTVUQCL1G1qKTPkmXsDOmBcMTJXu7lIjdKFXUYPB4g==",
+    "[Spartan]XQAAAQCJAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnGuPMc36cYuksVohKcYJPXuWsYRctTb7lfGb2cNTM1PtiT/OhOp9NDa3iY9c99Yz3pbVz0DS5PJPgaFQh0RV6z1c7bNBcxlR0P9A3+ZfGOjwED1qLzP7oFbqY8OIqZuIfPIETkXaFgYS5pcNdhUX3O0iQs2ehYZi1Gdyf2TMHy3QTLGYqcIFUTFxhZlwei200=",
+    "[Tac 2]XQAAAQCbAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyWpZlDIRmXLSSZjgFmz6Fvk71oGnuNNL0jhbHfR/EDmAEftJ5Hm8+jH9GE7kk2g97aSQyvub7OfsyYT8JMDGHTYU2OFhlxhGZhpRj524LpZOcILwZwW7yUrU0ziY82+9PF4rL7MRymvz0F1zl/l0RCFGp3QEZSeRcxD7BliviGMELErKmjtH3Zq0XWHno9qeZCX",
+    "[Tac 3]XQAAAQB4AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORJnhFulddczgP5RYdFbu5wAX5tswKHJS879giQhsHWAvqw7MasG2hBkkg3R76F4w6vcpviYgfQum8c6L1wRhpw8gqb6XcCco6bRHgfDgHP0bqsqRJlsjgAbSOBwsJYosjbcKCEhetZA51JicTM+ckPoixWpNKoppoVatvbDRVWsd4qRjh8xpzHek0qktciul8B4=",
+    "[Unnamed]XQAAAQDJAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORIRs5EXgXdu47r6/q0IkXyNZut9mFx6Y06gaFPilVbx2vCnJRDSnl9xYOxtVq9m1WzV/xLz8J5m1EAjQL/xbcBwJNyJtGtw1wr6kJ9yU4FhzFvXYL08yLONhmHrmWgt//KX7wtCw5U0AuFtlkb0L6wJb4oFh2IpHg8olP+xh/3oSjI4cvu2VfSVZHn8bD8DJGLSKvyA4fmJ5k3mn/qhASp5lwMI=",
+    "[Jackie]XQAAAQBpAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4ORH/DVAYo9vac/Sp42YrD6OYbLtuhyhsYH5MVbzFpHpnRRyzS5R7gXFrMKBf9LW5cPimzq5Cn0iUPVmpywhMurIOND9h8QPSm2WzPpg7/m5InX5SHqfDfRzm7JOhPGXJ3XMFciZ353d8EobaX4KPMSvMqI60RtNO0ZEVSldoG0gAG5LEqTVPgMOYLug==",
 }
 
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_glock.mdl"
@@ -49,19 +49,55 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 33 -- Damage done at point blank range
-SWEP.DamageMin = 24 -- Damage done at maximum range
+-- default pst ghz
 
-SWEP.DamageRand = 0.05 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
+SWEP.DamageMax = 54/2
+SWEP.DamageMin = 30/2
+SWEP.PhysBulletMuzzleVelocity = 457 /0.0254
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
 
-SWEP.RangeMin = 600 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.Penetration =      20 *2.54/100/0.0254
+SWEP.PenetrationDelta = 33/100
+SWEP.ArmorPiercing =    33/100
+SWEP.RicochetChance =   5/100
 
-SWEP.Penetration = 5 -- Units of wood that can be penetrated by this gun.
 
--------------------------- PHYS BULLET BALLISTICS
+SWEP.DamageLookupTable = {
+    {   10/0.0254, 
+    54/2     },
 
-SWEP.PhysBulletMuzzleVelocity = 21000
+    {   100 /0.0254, 
+    43.77/2     },
+
+    {   200 /0.0254, 
+    40.34/2     },
+
+    {   300 /0.0254, 
+    37.92/2     },
+
+    {   400 /0.0254, 
+    35.98/2     },
+
+    {   500 /0.0254, 
+    34.32/2     },
+
+    {   600 /0.0254, 
+    32.96/2     },
+
+    {   700 /0.0254, 
+    31.9/2     },
+
+    {   800 /0.0254, 
+    31.12/2     },
+
+    {   900 /0.0254, 
+    30.65/2     },
+
+    {   1000 /0.0254, 
+    30.51/2     },
+}
+
 
 -------------------------- MAGAZINE
 
@@ -75,9 +111,9 @@ SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/57mag.mdl" -- Set to a string or table to drop this magazine when reloading.
-SWEP.DropMagazineSounds = {
-    "arc9_eft_shared/weap_magdrop_plastic.wav"
-} -- Table of sounds a dropped magazine should play.
+-- SWEP.DropMagazineSounds = {
+--     "arc9_eft_shared/weap_magdrop_plastic.wav"
+-- } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.26
 SWEP.DropMagazineQCA = 4
@@ -215,6 +251,7 @@ SWEP.CrouchAng = Angle(0, 0, -1)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(21.7, 25, 3.5)
 SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeRotateAnchor = Vector(21, -4.28, -5.23)
 
 -------------------------- HoldTypes
 
@@ -390,6 +427,15 @@ SWEP.Attachments = {
         }
     },
     {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_9x19",
+        Bone = "mod_barrel",
+        Integral = true,
+        Installed = "eft_ammo_9x19_pst_gzh",
+        Pos = Vector(0, -1.2, -4),
+        Ang = Angle(0, 0, 0),
+    },
+    {
         PrintName = "Magazine",
         Category = "eft_g17_mag",
         Bone = "mod_magazine",
@@ -429,6 +475,11 @@ SWEP.Attachments = {
         Pos = Vector(0, 17.6, -1),
         Ang = Angle(90, -90, 90),
         Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_glock"},
+        -- CosmeticOnly = true,
     },
 }
 

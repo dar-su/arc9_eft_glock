@@ -49,19 +49,54 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 33 -- Damage done at point blank range
-SWEP.DamageMin = 24 -- Damage done at maximum range
+-- default pst ghz
 
-SWEP.DamageRand = 0.05 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
+SWEP.DamageMax = 54/2
+SWEP.DamageMin = 30/2
+SWEP.PhysBulletMuzzleVelocity = 457 /0.0254
+SWEP.RangeMin = 10
+SWEP.RangeMax = 1000 /0.0254
 
-SWEP.RangeMin = 600 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.Penetration =      20 *2.54/100/0.0254
+SWEP.PenetrationDelta = 33/100
+SWEP.ArmorPiercing =    33/100
+SWEP.RicochetChance =   5/100
 
-SWEP.Penetration = 5 -- Units of wood that can be penetrated by this gun.
 
--------------------------- PHYS BULLET BALLISTICS
+SWEP.DamageLookupTable = {
+    {   10/0.0254, 
+    54/2     },
 
-SWEP.PhysBulletMuzzleVelocity = 21000
+    {   100 /0.0254, 
+    43.77/2     },
+
+    {   200 /0.0254, 
+    40.34/2     },
+
+    {   300 /0.0254, 
+    37.92/2     },
+
+    {   400 /0.0254, 
+    35.98/2     },
+
+    {   500 /0.0254, 
+    34.32/2     },
+
+    {   600 /0.0254, 
+    32.96/2     },
+
+    {   700 /0.0254, 
+    31.9/2     },
+
+    {   800 /0.0254, 
+    31.12/2     },
+
+    {   900 /0.0254, 
+    30.65/2     },
+
+    {   1000 /0.0254, 
+    30.51/2     },
+}
 
 -------------------------- MAGAZINE
 
@@ -75,9 +110,9 @@ SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/57mag.mdl" -- Set to a string or table to drop this magazine when reloading.
-SWEP.DropMagazineSounds = {
-    "arc9_eft_shared/weap_magdrop_plastic.wav"
-} -- Table of sounds a dropped magazine should play.
+-- SWEP.DropMagazineSounds = {
+--     "arc9_eft_shared/weap_magdrop_plastic.wav"
+-- } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.26
 SWEP.DropMagazineQCA = 4
@@ -211,6 +246,7 @@ SWEP.CrouchAng = Angle(0, 0, -1)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(21.7, 25, 3.5)
 SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeRotateAnchor = Vector(21, -4.28, -5.23)
 
 -------------------------- HoldTypes
 
@@ -388,6 +424,15 @@ SWEP.Attachments = {
         }
     },
     {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_9x19",
+        Bone = "mod_barrel",
+        Integral = true,
+        Installed = "eft_ammo_9x19_pst_gzh",
+        Pos = Vector(0, -1.2, -4),
+        Ang = Angle(0, 0, 0),
+    },
+    {
         PrintName = "Magazine",
         Category = "eft_g17_mag",
         Bone = "mod_magazine",
@@ -436,6 +481,11 @@ SWEP.Attachments = {
         Bone = "weapon",
         Pos = Vector(0, 15, -2),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Custom slot",
+        Category = {"eft_custom_slot", "eft_custom_glock"},
+        -- CosmeticOnly = true,
     },
 }
 
