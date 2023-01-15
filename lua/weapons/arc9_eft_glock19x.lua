@@ -338,6 +338,7 @@ SWEP.missingpartsnotifsent = 0
 
 function SWEP:HookP_BlockFire()
     if  !self:GetValue("HasBarrel") or 
+        !self:GetValue("HasAmmoooooooo") or 
         !self:GetValue("HasSlide") then
             
             if self.missingpartsnotifsent < CurTime() then
