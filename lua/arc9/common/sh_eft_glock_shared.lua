@@ -130,7 +130,7 @@ ARC9EFT.Glock_Anims = {
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
         EventTable = {
-            { s = path .. "pm_draw.wav", t = 0.05 },
+            { s = "arc9_eft_shared/pm_draw.wav", t = 0.05 },
             { s = path .. "grach_slider_in.wav", t = 0.58 },
             { s = path .. "pm_slider_out.wav", t = 0.79 },
         },
@@ -139,25 +139,25 @@ ARC9EFT.Glock_Anims = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = path .. "pm_draw.wav", t = 0.05 },
+            { s = "arc9_eft_shared/pm_draw.wav", t = 0.05 },
         }
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = path .. "pm_draw.wav", t = 0.05 },
+            { s = "arc9_eft_shared/pm_draw.wav", t = 0.05 },
         }
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = path .. "pm_holster.wav", t = 0 },
+            { s =  "arc9_eft_shared/pm_holster.wav", t = 0 },
         }
     },
     ["holster_empty"] = {
         Source = "holster_empty",
         EventTable = {
-            { s = path .. "pm_holster.wav", t = 0 },
+            { s =  "arc9_eft_shared/pm_holster.wav", t = 0 },
         }
     },
 
@@ -173,10 +173,10 @@ ARC9EFT.Glock_Anims = {
             { s = path .. "pm_catch_slider.wav", t = 0.05 },
         }
     },
-    ["fire_dry"] = {
+    ["dryfire"] = {
         Source = "fire_dry",
     },
-    ["fire_dry_empty"] = {
+    ["dryfire_empty"] = {
         Source = "fire_dry_empty",
     },
 
