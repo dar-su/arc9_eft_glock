@@ -114,7 +114,7 @@ SWEP.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/57mag.mdl" -- Set t
 --     "arc9_eft_shared/weap_magdrop_plastic.wav"
 -- } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.26
+SWEP.DropMagazineTime = 0.45
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 180, 90)
@@ -417,10 +417,10 @@ SWEP.Attachments = {
         Installed = "eft_rec_g19x_std",
         SubAttachments = {
             {
-                Installed = "eft_fs_g17_std",
+                Installed = "eft_fs_g19x_std",
             },
             {
-                Installed = "eft_rs_g17_std",
+                Installed = "eft_rs_g19x_std",
             },
         }
     },

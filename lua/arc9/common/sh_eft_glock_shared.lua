@@ -29,6 +29,7 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
         end
         local rand = swep.EFTInspectnum
         if rand == 3 then swep.EFTInspectnum = 0 rand = 0 end
+        if empty and rand == 0 then swep.EFTInspectnum = 1 rand = 1 end
 
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
@@ -105,8 +106,8 @@ local rst_empty = {
     { s =  path .. "pm_catch_slider.wav", t = 2.13 },
     { s = randspin, t = 2.4 },
     {hide = 0, t = 0},
-    {hide = 1, t = 0.4},
-    {hide = 0, t = 0.6}
+    {hide = 1, t = 0.45},
+    {hide = 0, t = 0.95}
 }
 
 local rst_magcheck = {
