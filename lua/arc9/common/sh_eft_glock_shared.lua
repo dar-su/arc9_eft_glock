@@ -70,49 +70,54 @@ local path = "weapons/darsu_eft/glock/"
 local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.wav","arc9_eft_shared/weapon_generic_rifle_spin2.wav","arc9_eft_shared/weapon_generic_rifle_spin3.wav","arc9_eft_shared/weapon_generic_rifle_spin4.wav","arc9_eft_shared/weapon_generic_rifle_spin5.wav","arc9_eft_shared/weapon_generic_rifle_spin6.wav","arc9_eft_shared/weapon_generic_rifle_spin7.wav","arc9_eft_shared/weapon_generic_rifle_spin8.wav","arc9_eft_shared/weapon_generic_rifle_spin9.wav","arc9_eft_shared/weapon_generic_rifle_spin10.wav"}
 local slidelock = {"arc9_eft_shared/pistol_jam_slidelock_try1.wav", "arc9_eft_shared/pistol_jam_slidelock_try2.wav", "arc9_eft_shared/pistol_jam_slidelock_try3.wav"}
 local slidelockgrab = {"arc9_eft_shared/pistol_jam_slidelock_grab1.wav", "arc9_eft_shared/pistol_jam_slidelock_grab2.wav", "arc9_eft_shared/pistol_jam_slidelock_grab3.wav"}
+local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.wav","arc9_eft_shared/generic_mag_pouch_in2.wav","arc9_eft_shared/generic_mag_pouch_in3.wav","arc9_eft_shared/generic_mag_pouch_in4.wav","arc9_eft_shared/generic_mag_pouch_in5.wav","arc9_eft_shared/generic_mag_pouch_in6.wav","arc9_eft_shared/generic_mag_pouch_in7.wav"}
+local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.wav","arc9_eft_shared/generic_mag_pouch_out2.wav","arc9_eft_shared/generic_mag_pouch_out3.wav","arc9_eft_shared/generic_mag_pouch_out4.wav","arc9_eft_shared/generic_mag_pouch_out5.wav","arc9_eft_shared/generic_mag_pouch_out6.wav","arc9_eft_shared/generic_mag_pouch_out7.wav"}
 
 local rst_single = {
-    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 0.15 },
-    { s = path .. "grach_slider_in.wav", t = 21/24 },
-    { s =  path .. "generic_jam_shell_ remove_medium3.wav", t = 43/26  },
-    { s = randspin, t = 59/26 },
-    { s =  path .. "pm_catch_slider.wav", t = 70/26 },
-    { s = randspin, t = 74/26 },
+    { s = path .. "grach_slider_in.wav", t = 0.45 },
+    { s = "arc9_eft_shared/weap_round_pullout.wav", t = 0.6},
+    { s = randspin, t = 0.7 },
+    { s =  path .. "generic_jam_shell_ remove_medium3.wav", t = 1.26  },
+    { s = randspin, t = 1.72 },
+    { s =  path .. "pm_catch_slider.wav", t = 2.27 },
+    { s = randspin, t = 2.76 },
 }
 
 local rst_def = {
-    { s = randspin, t = 0.16 },    
-    { s =  path .. "kedr_fireselector_up.wav", t = 0.43 }, -- eft devs redarded
+    { s = randspin, t = 0.1 },    
+    { s =  path .. "kedr_fireselector_up.wav", t = 0.28 }, -- eft devs redarded
     { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.38 },
-    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 1.1 },
+    { s = pouchin, t = 0.9 },
+    { s = pouchout, t = 1.32 },
+    { s = randspin, t = 1.52 },
     { s =  path .. "mpx_weap_magin_plastic.wav", t = 2.1 },
-    { s = randspin, t = 2.4 },
+    { s = randspin, t = 2.7 },
 }
 
 local rst_empty = {
-    { s = randspin, t = 0.12 },    
-    { s =  path .. "kedr_fireselector_up.wav", t = 0.21 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.38 },
-    { s = "arc9_eft_shared/weap_magin_sbrosnik.wav", t = 0.92 },
-    { s =  randspin, t = 1.25 },
-    { s =  path .. "mpx_weap_magin_plastic.wav", t = 1.34 },
-    { s = randspin, t = 1.53 },  
-    { s =  path .. "pm_catch_slider.wav", t = 2.15 },
-    { s = randspin, t = 2.3 },
+    { s = randspin, t = 0.1 },    
+    { s =  path .. "kedr_fireselector_up.wav", t = 0.23 }, -- eft devs redarded
+    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.27 },
+    { s =  randspin, t = 0.6 },
+    { s = pouchout, t = 0.73 },
+    { s =  path .. "mpx_weap_magin_plastic.wav", t = 1.27 },
+    { s = randspin, t = 1.93 },  
+    { s =  path .. "pm_catch_slider.wav", t = 2.13 },
+    { s = randspin, t = 2.4 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.4},
     {hide = 0, t = 0.6}
 }
 
 local rst_magcheck = {
-    { s = "arc9_eft_shared/weap_handoff.wav", t = 0.05 },
-    { s =  path .. "kedr_fireselector_up.wav", t = 0.35},
-    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.43 },
-    { s = randspin, t = 0.92 },
-    { s = randspin, t = 1.87 },
-    { s = randspin, t = 2.38 },
-    { s =  path .. "mpx_weap_magin_plastic.wav", t = 2.9 },
-    { s = randspin, t = 3.39 },
+    { s = randspin, t = 0.1 },
+    { s =  path .. "kedr_fireselector_up.wav", t = 0.25},
+    { s =  path .. "mpx_weap_magout_plastic.wav", t = 0.34 },
+    { s = randspin, t = 0.62 },
+    { s = randspin, t = 1.76 },
+    { s = randspin, t = 2.49 },
+    { s =  path .. "mpx_weap_magin_plastic.wav", t = 3 },
+    { s = randspin, t = 3.45 },
 }
 
 ARC9EFT.Glock_Anims = {
@@ -124,34 +129,34 @@ ARC9EFT.Glock_Anims = {
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
-            { s = path .. "grach_slider_in.wav", t = 16/24 },
-            { s = path .. "pm_slider_out.wav", t = 20/24 },
+            { s = path .. "pm_draw.wav", t = 0.05 },
+            { s = path .. "grach_slider_in.wav", t = 0.58 },
+            { s = path .. "pm_slider_out.wav", t = 0.79 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
+            { s = path .. "pm_draw.wav", t = 0.05 },
         }
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = "arc9_eft_shared/weap_in.wav", t = 0 },
+            { s = path .. "pm_draw.wav", t = 0.05 },
         }
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "arc9_eft_shared/weap_out.wav", t = 0 },
+            { s = path .. "pm_holster.wav", t = 0 },
         }
     },
     ["holster_empty"] = {
         Source = "holster_empty",
         EventTable = {
-            { s = "arc9_eft_shared/weap_out.wav", t = 0 },
+            { s = path .. "pm_holster.wav", t = 0 },
         }
     },
 
@@ -331,22 +336,20 @@ ARC9EFT.Glock_Anims = {
     ["inspect1"] = {
         Source = "inspect",
         EventTable = {
-            { s = "arc9_eft_shared/weap_handoff.wav", t = 0.1 },
-            { s = randspin, t = 0.5 },
-            { s = "arc9_eft_shared/weapon_generic_pistol_spin4.wav", t = 0.8 },
+            { s = randspin, t = 0.15 },
+            { s = "arc9_eft_shared/weapon_generic_pistol_spin4.wav", t = 1.39 },
             { s = randspin, t = 1.4 },
-            { s = randspin, t = 2.1 },
+            { s = randspin, t = 2.92 },
         }
     },
 
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
-            { s = "arc9_eft_shared/weap_handoff.wav", t = 0.1 },
-            { s = randspin, t = 0.5 },
-            { s = "arc9_eft_shared/weapon_generic_pistol_spin4.wav", t = 0.8 },
+            { s = randspin, t = 0.15 },
+            { s = "arc9_eft_shared/weapon_generic_pistol_spin4.wav", t = 1.39 },
             { s = randspin, t = 1.4 },
-            { s = randspin, t = 2.1 },
+            { s = randspin, t = 2.92 },
         }
     },
 
@@ -386,12 +389,10 @@ ARC9EFT.Glock_Anims = {
     ["inspect0"] = {
         Source = "checkchamber",
         EventTable = {
-            { s = randspin, t = 0.19 },
-            { s = path .. "pm_slider_out.wav", t = 0.63 },
-            { s = randspin, t = 0.8 },
-            { s = path .. "grach_slider_in.wav", t = 1.2 },
-            { s = randspin, t = 1.35 },
-            { s = randspin, t = 1.7 },
+            { s = randspin, t = 0.1 },
+            { s = path .. "grach_slider_in.wav", t = 0.62 },
+            { s = path .. "pm_slider_out.wav", t = 1.23 },
+            { s = randspin, t = 1.46 },
         }
     },
     
