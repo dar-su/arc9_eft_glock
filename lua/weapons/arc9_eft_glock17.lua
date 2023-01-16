@@ -262,6 +262,7 @@ SWEP.HoldTypeHolstered = "rpg"
 SWEP.HoldTypeSights = "rpg"
 
 SWEP.HoldTypeCustomize = "physgun"
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
 SWEP.WorldModelOffset = {
     Pos = Vector(-15.5, 5.5, -4),
