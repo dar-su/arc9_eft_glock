@@ -260,6 +260,7 @@ SWEP.HoldType = "rpg"
 SWEP.HoldTypeSprint = "rpg"
 SWEP.HoldTypeHolstered = "rpg"
 SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeNPC = "pistol"
 
 SWEP.HoldTypeCustomize = "physgun"
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
