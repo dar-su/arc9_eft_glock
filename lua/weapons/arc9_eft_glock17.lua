@@ -377,10 +377,6 @@ SWEP.AttachmentElements = {
     ["eft_rec_g17_zt_hex"]    = { Bodygroups = { {1, 4} } },
     ["eft_rec_g17_zt_spartan"]    = { Bodygroups = { {1, 3} } },
 
-    -- ["eft_fs_g17_se"]    = { Bodygroups = { {8, 4} } },
-    -- ["eft_fs_g17_std"]    = { Bodygroups = { {8, 1} } },
-    -- ["eft_fs_g17_tfx"]    = { Bodygroups = { {8, 3} } },
-    -- ["eft_fs_g17_zt"]    = { Bodygroups = { {8, 2} } },
 
     ["eft_muzzle_g17_g4"]    = { Bodygroups = { {3, 1} } },
     ["eft_muzzle_g17_3port"]    = { Bodygroups = { {3, 7} } },
@@ -400,8 +396,14 @@ SWEP.AttachmentElements = {
     ["eft_tac_g17_tangodown"]    = { Bodygroups = { {7, 1} } },
     ["eft_tac_g17_zt_cap"]    = { Bodygroups = { {7, 2} } },
     
+    
+    -- not exist in eft, use for custom atts :ahmad2:
     ["eft_barrel_g18c_std"]    = { Bodygroups = { {2, 3} } },
     ["eft_rec_g18c_std"]    = { Bodygroups = { {1, 2} } },
+    ["eft_barrel_g19x_std"]    = { Bodygroups = { {2, 7} } },
+    ["eft_rec_g19x_std"]    = { Bodygroups = { {1, 11} } },
+    ["eft_rec_g19x_black"]    = { Bodygroups = { {1, 12} } },
+    ["eft_glock_black"] = { Skin = 1 },
 }
 
 SWEP.Attachments = {
