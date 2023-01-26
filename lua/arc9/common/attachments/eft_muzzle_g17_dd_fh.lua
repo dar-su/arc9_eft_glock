@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/dd_fh.png", "mips smooth")
 ATT.Description = [[A simple, inexpensive, but still quite effective compensator for the Glock family of pistols.]]
 
 ATT.VisualRecoilMult = 0.91
+ATT.RecoilMult = 0.91
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.99

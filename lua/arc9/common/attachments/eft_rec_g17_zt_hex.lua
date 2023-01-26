@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/slide_zev.png", "mips smooth
 ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.]]
 
 ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
 ATT.EFTErgoAdd = 9
 ATT.CustomPros = { Ergonomics = "+9" }
 

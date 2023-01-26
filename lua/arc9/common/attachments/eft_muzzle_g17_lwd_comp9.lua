@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/lwdcomp4.png", "mips smooth"
 ATT.Description = [[A Glock 9x19 compensator manufactured by Lone Wolf.]]
 
 ATT.VisualRecoilMult = 0.88
+ATT.RecoilMult = 0.88
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 1.03

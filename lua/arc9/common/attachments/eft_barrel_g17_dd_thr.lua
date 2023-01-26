@@ -6,6 +6,7 @@ ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufact
 ATT.EFTErgoAdd = -5
 ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.97
 
 ATT.HasBarrel = true 

@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/4port.png", "mips smooth")
 ATT.Description = [[A custom compensator manufactured by CARVER Custom. The compensator includes 4 ports on the top with 3 exhaust ports on each side, totaling 10 ports. Can only fit 3rd generation Glock pistols.]]
 
 ATT.VisualRecoilMult = 0.88
+ATT.RecoilMult = 0.88
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.98

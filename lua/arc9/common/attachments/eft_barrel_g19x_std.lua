@@ -6,6 +6,7 @@ ATT.Description = [[A standard barrel for the Glock 19X 9x19 pistol. The barrel 
 ATT.EFTErgoAdd = -5
 ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.977
 
 ATT.HasBarrel = true 

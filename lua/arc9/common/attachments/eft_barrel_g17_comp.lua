@@ -6,6 +6,7 @@ ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 17 
 ATT.EFTErgoAdd = -5
 ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.95
+ATT.RecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.937
 
 ATT.HasBarrel = true 

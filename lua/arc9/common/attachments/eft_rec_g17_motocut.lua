@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/slide_motocut.png", "mips sm
 ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 
 ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 

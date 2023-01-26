@@ -4,6 +4,7 @@ ATT.Icon = Material("entities/eft_glock_attachments/3port.png", "mips smooth")
 ATT.Description = [[A compensator manufactured by CARVER Custom. The model is only compatible with the 3rd generation 9x19 pistols.]]
 
 ATT.VisualRecoilMult = 0.89
+ATT.RecoilMult = 0.89
 ATT.EFTErgoAdd = -1
 ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.98
