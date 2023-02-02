@@ -10,7 +10,7 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
     -- local rand = 0
     local nomag = false
 
-    if elements["eft_mag_g17_std_17"] or elements["eft_mag_g19x_std_21"] then ending = 0
+    if elements["eft_mag_g17_std_17"] or elements["eft_mag_g19x_std_21"] or elements["eft_mag_slickers"] then ending = 0
     elseif elements["eft_mag_g17_gl9_21"] or elements["eft_mag_g19x"] then ending = 1
     elseif elements["eft_mag_g17_bigstick_33"] or elements["eft_mag_bigstick24"] or elements["eft_mag_bigstick31"]  then ending = 2
     elseif elements["eft_mag_g17_sgmt_50"] then ending = 3
