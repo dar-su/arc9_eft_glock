@@ -128,27 +128,25 @@ SWEP.RPM = 1160
 
 -------------------------- RECOIL
 
--- General recoil multiplier
-SWEP.Recoil = 1.06
+SWEP.Recoil = 0.35
 SWEP.RecoilCrouchMult = 0.5
 SWEP.VisualRecoilCrouchMult = 0.5
 
--- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.1
+SWEP.RecoilSide = 0.015
 
--- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
--- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.06
-SWEP.RecoilRandomSide = 0.01
+SWEP.RecoilRandomSide = 0.02
 
-SWEP.RecoilDissipationRate = 0.5 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.05 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 31
+SWEP.RecoilAutoControl = 10
+SWEP.RecoilResetTime = 0.03
+SWEP.RecoilFullResetTime = 0.15
 
-SWEP.RecoilAutoControl = 5 -- Multiplier for automatic recoil control.
-
-SWEP.RecoilKick = 0.4
-
+SWEP.ViewRecoil = 1
+SWEP.ViewRecoilUpMult = 1000
+SWEP.ViewRecoilUpMultSights = 500
+SWEP.ViewRecoilSideMult = 1000
 
 
 SWEP.UseVisualRecoil = true 
@@ -156,7 +154,7 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 0.3
 SWEP.VisualRecoilMultSights = 0.7
 
-SWEP.VisualRecoilUp = 35 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilUp = 55 -- Vertical tilt for visual recoil.
 SWEP.VisualRecoilSide = 35 -- Horizontal tilt for visual recoil.
 SWEP.VisualRecoilRoll = 6 -- Roll tilt for visual recoil.
 
@@ -171,9 +169,23 @@ SWEP.VisualRecoilDampingConst = 260
 SWEP.VisualRecoilSpringMagnitude = 1
 
 
-SWEP.RecoilKick = 0.05 -- Camera recoil
-SWEP.RecoilKickDamping = 10 -- Camera recoil damping
+SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
+    if recamount > 6 then
+        recamount = math.Clamp((recamount - 6) / 33, 0, 1)
+        return springconstant * math.max(1, 20 * recamount), VisualRecoilSpringMagnitude * 1, PUNCH_DAMPING * 1
+    end
+    return springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING
+end
 
+
+SWEP.VisualRecoilDoingFunc = function(up, side, roll, punch, recamount)
+    if recamount > 5 then
+        recamount = 1.6 - math.Clamp((recamount - 5) / 7, 0, 1)
+        
+        return up * recamount, side * 3, roll, punch * 0.9
+    end
+    return up, side, roll, punch
+end
 
 
 
