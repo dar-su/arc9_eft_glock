@@ -169,9 +169,9 @@ SWEP.VisualRecoilPunch = 2 -- How far back visual recoil moves the gun.
 SWEP.VisualRecoilPunchMultSights = 0.5
 SWEP.VisualRecoilPositionBumpUp = -0.009
 
-SWEP.VisualRecoilSpringPunchDamping = 15
-SWEP.VisualRecoilDampingConst = 250
-SWEP.VisualRecoilSpringMagnitude = 1
+SWEP.VisualRecoilSpringPunchDamping = 25 / 2.67
+SWEP.VisualRecoilDampingConst = 250 * 1.67
+SWEP.VisualRecoilSpringMagnitude = 1 / 1.67
 
 
 
