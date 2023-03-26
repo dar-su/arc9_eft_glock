@@ -426,7 +426,7 @@ ATT.CustomCons = { Ergonomics = "-1.5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_19x.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_19x.mdl"
-ATT.ChamberSize = 0
+ATT.ChamberSize = 1
 ATT.ClipSize = 19
 ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
