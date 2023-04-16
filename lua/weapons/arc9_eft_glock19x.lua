@@ -137,7 +137,7 @@ SWEP.RecoilCrouchMult = 0.5
 SWEP.VisualRecoilCrouchMult = 0.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 * 0.85 -- patch 0.13.0.4.22617
 SWEP.RecoilSide = 0.015 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -157,7 +157,7 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 0.72
 SWEP.VisualRecoilMultSights = 0.7
 
-SWEP.VisualRecoilUp = 50 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilUp = 50 * 0.85 -- patch 0.13.0.4.22617
 SWEP.VisualRecoilSide = 25 -- Horizontal tilt for visual recoil.
 SWEP.VisualRecoilRoll = 6 -- Roll tilt for visual recoil.
 
