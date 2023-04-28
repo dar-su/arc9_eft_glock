@@ -4,20 +4,25 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.PrintName = "Glock 18C"
 
-SWEP.Class = "Machine Pistol"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_megapist")
 SWEP.Trivia = {
-    Manufacturer1 = "Glock GmbH",
-    Calibre2 = "9x19mm Parabellum",
-    Action3 = "Recoil",
-    Country4 = "Republic of Austria",
-    Year5 = "1989"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Glock GmbH",
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = "Recoil",
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Republic of Austria",
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1989"
 }
 
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
 SWEP.Description = [[The Glock 18 is a selective-fire variant of the Glock 17. The firearm is typically used with an extended 33-round-capacity magazine, although other magazines from the Glock 17 can be used, with available capacities of 10, 17, or 19 rounds. It has a keyhole opening cut into the forward portion of the slide, similar to the opening on the Glock long-slide models, although the Glock 18 has a standard-length slide. The keyhole opening provides an area to allow the four, progressively larger (from back to front) compensator cuts machined into the barrel to vent the propellant gases upwards, affording more control over the rapid-firing machine pistol.]]
 

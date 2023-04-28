@@ -4,20 +4,25 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.PrintName = "Glock 19X"
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
 SWEP.Trivia = {
-    Manufacturer1 = "Glock GmbH",
-    Calibre2 = "9x19mm Parabellum",
-    Action3 = "Recoil",
-    Country4 = "Republic of Austria",
-    Year5 = "2018"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Glock GmbH",
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = "Recoil",
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Republic of Austria",
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "2018"
 }
 
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
 SWEP.Description = [[The Glock 19X is an Austrian pistol based on the Glock 19 Modular Handgun System developed by Glock. Glock 19X is a hybrid of the Glock 17 and Glock 19 models: bolt and barrel of the 19th model, and the long handle of the very first 17th model. Also, the Glock 19X is devoid of sub-finger recesses, but has a loop for a safety cord. The gun is made in the Coyote color.]]
 

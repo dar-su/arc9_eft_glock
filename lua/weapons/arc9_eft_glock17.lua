@@ -4,20 +4,25 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.PrintName = "Glock 17"
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
 SWEP.Trivia = {
-    Manufacturer1 = "Glock GmbH",
-    Calibre2 = "9x19mm Parabellum",
-    Action3 = "Recoil",
-    Country4 = "Republic of Austria",
-    Year5 = "1982"
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Glock GmbH",
+    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
+    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = "Recoil",
+    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Republic of Austria",
+    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1982"
 }
 
-SWEP.Credits = { Author1 = "Darsu", Assets2 = "Battlestate Games LTD", General_help3 = "Mal0", ARC9_Base4 = "Arctic" }
+SWEP.Credits = { 
+    [ARC9:GetPhrase("eft_trivia_author") .. "1"] = "Darsu", 
+    [ARC9:GetPhrase("eft_trivia_assets") .. "2"] = "Battlestate Games LTD", 
+    [ARC9:GetPhrase("eft_trivia_help") .. "3"] = "Mal0", 
+    [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
+}
 
 SWEP.Description = [[Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon.]]
 
