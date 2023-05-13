@@ -367,6 +367,14 @@ function SWEP:HookP_BlockFire()
     end
 end
 
+function SWEP:Hook_RedPrintName()
+    if  !self:GetValue("HasBarrel") or 
+        !self:GetValue("HasAmmoooooooo") or 
+        !self:GetValue("HasSlide") then
+            return true 
+    end
+end
+
 SWEP.AttachmentElements = {
     ["eft_barrel_g17_aw"]    = { Bodygroups = { {2, 5} } },
     ["eft_barrel_g17_comp"]    = { Bodygroups = { {2, 2} } },

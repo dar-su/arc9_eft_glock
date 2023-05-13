@@ -375,6 +375,14 @@ function SWEP:HookP_BlockFire()
     end
 end
 
+function SWEP:Hook_RedPrintName()
+    if  !self:GetValue("HasBarrel") or 
+        !self:GetValue("HasAmmoooooooo") or 
+        !self:GetValue("HasSlide") then
+            return true 
+    end
+end
+
 SWEP.AttachmentElements = {
 
     ["eft_silencer_fd917"]    = { Bodygroups = { {9, 1} } },
