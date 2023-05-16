@@ -109,7 +109,7 @@ SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 
 SWEP.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/57mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 -- SWEP.DropMagazineSounds = {
---     "arc9_eft_shared/weap_magdrop_plastic.wav"
+--     "arc9_eft_shared/weap_magdrop_plastic.ogg"
 -- } -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.45
@@ -220,7 +220,7 @@ SWEP.HoldBreathTime = 40
 SWEP.RestoreBreathTime = 30
 SWEP.BreathInSound = false 
 SWEP.BreathOutSound = false
-SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.wav"
+SWEP.BreathRunOutSound = "arc9_eft_shared/bear3_breath_sprint.ogg"
 
 SWEP.AimDownSightsTime = 0.1 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
@@ -324,25 +324,25 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 
 local path = "weapons/darsu_eft/glock/"
 
-SWEP.ShootSound = { path .. "glock18_outdoor_close_1.wav", path .. "glock18_outdoor_close_2.wav"}
-SWEP.ShootSoundIndoor = { path .. "glock18_indoor_close_1.wav", path .. "glock18_indoor_close_2.wav"}
-SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.wav", path .. "glock18_outdoor_distant_2.wav" }
-SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.wav", path .. "glock18_indoor_distant_2.wav" }
+SWEP.ShootSound = { path .. "glock18_outdoor_close_1.ogg", path .. "glock18_outdoor_close_2.ogg"}
+SWEP.ShootSoundIndoor = { path .. "glock18_indoor_close_1.ogg", path .. "glock18_indoor_close_2.ogg"}
+SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.ogg", path .. "glock18_outdoor_distant_2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.ogg", path .. "glock18_indoor_distant_2.ogg" }
 
-SWEP.ShootSoundSilenced = { path .. "glock17_close_silenced.wav", path .. "glock17_close_silenced2.wav" }
-SWEP.ShootSoundSilencedIndoor = path .. "glock17_indoor_close_silenced.wav"
-SWEP.DistantShootSoundSilenced = path .. "glock17_distant_silenced.wav"
-SWEP.DistantShootSoundSilencedIndoor = path .. "glock17_indoor_distant_silenced.wav"
+SWEP.ShootSoundSilenced = { path .. "glock17_close_silenced.ogg", path .. "glock17_close_silenced2.ogg" }
+SWEP.ShootSoundSilencedIndoor = path .. "glock17_indoor_close_silenced.ogg"
+SWEP.DistantShootSoundSilenced = path .. "glock17_distant_silenced.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "glock17_indoor_distant_silenced.ogg"
 
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 SWEP.ToggleAttSound = ""-- we will have own in sound tables
 
-SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.wav"
+SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
 SWEP.SuppressEmptySuffix = true 
 
-SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.wav"
-SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.wav"
+SWEP.EnterSightsSound = "arc9_eft_shared/weap_in.ogg"
+SWEP.ExitSightsSound = "arc9_eft_shared/weap_handoff.ogg"
 
 SWEP.Hook_TranslateAnimation = ARC9EFT.Glock_AnimsHook
 SWEP.Animations = ARC9EFT.Glock_Anims
