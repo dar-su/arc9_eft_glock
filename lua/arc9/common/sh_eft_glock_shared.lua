@@ -68,6 +68,7 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
 end
 
 local path = "weapons/darsu_eft/glock/"
+local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
 local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
 local slidelock = {"arc9_eft_shared/pistol_jam_slidelock_try1.ogg", "arc9_eft_shared/pistol_jam_slidelock_try2.ogg", "arc9_eft_shared/pistol_jam_slidelock_try3.ogg"}
 local slidelockgrab = {"arc9_eft_shared/pistol_jam_slidelock_grab1.ogg", "arc9_eft_shared/pistol_jam_slidelock_grab2.ogg", "arc9_eft_shared/pistol_jam_slidelock_grab3.ogg"}
@@ -75,35 +76,35 @@ local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.ogg","arc9_eft_shared/ge
 local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/generic_mag_pouch_out2.ogg","arc9_eft_shared/generic_mag_pouch_out3.ogg","arc9_eft_shared/generic_mag_pouch_out4.ogg","arc9_eft_shared/generic_mag_pouch_out5.ogg","arc9_eft_shared/generic_mag_pouch_out6.ogg","arc9_eft_shared/generic_mag_pouch_out7.ogg"}
 
 local rst_single = {
-    { s = path .. "grach_slider_in.ogg", t = 0.45 },
+    { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.45 },
     { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 0.6},
     { s = randspin, t = 0.7 },
-    { s =  path .. "generic_jam_shell_ remove_medium3.ogg", t = 1.26  },
+    { s = pathgenericpistol .. "generic_jam_shell_ remove_medium3.ogg", t = 1.26  },
     { s = randspin, t = 1.72 },
-    { s =  path .. "pm_catch_slider.ogg", t = 2.27 },
+    { s = pathgenericpistol .. "pm_catch_slider.ogg", t = 2.27 },
     { s = randspin, t = 2.76 },
 }
 
 local rst_def = {
     { s = randspin, t = 0.1 },    
-    { s =  path .. "kedr_fireselector_up.ogg", t = 0.28 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.38 },
+    { s = pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.28 }, -- eft devs redarded
+    { s = pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.38 },
     { s = pouchin, t = 0.9 },
     { s = pouchout, t = 1.32 },
     { s = randspin, t = 1.52 },
-    { s =  path .. "mpx_weap_magin_plastic.ogg", t = 2.1 },
+    { s = pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.1 },
     { s = randspin, t = 2.7 },
 }
 
 local rst_empty = {
     { s = randspin, t = 0.1 },    
-    { s =  path .. "kedr_fireselector_up.ogg", t = 0.23 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.27 },
-    { s =  randspin, t = 0.6 },
+    { s = pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.23 }, -- eft devs redarded
+    { s = pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.27 },
+    { s = randspin, t = 0.6 },
     { s = pouchout, t = 0.73 },
-    { s =  path .. "mpx_weap_magin_plastic.ogg", t = 1.27 },
+    { s = pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.27 },
     { s = randspin, t = 1.93 },  
-    { s =  path .. "pm_catch_slider.ogg", t = 2.13 },
+    { s = pathgenericpistol .. "pm_catch_slider.ogg", t = 2.13 },
     { s = randspin, t = 2.4 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.45},
@@ -112,12 +113,12 @@ local rst_empty = {
 
 local rst_magcheck = {
     { s = randspin, t = 0.1 },
-    { s =  path .. "kedr_fireselector_up.ogg", t = 0.25},
-    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.34 },
+    { s = pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.25},
+    { s = pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.34 },
     { s = randspin, t = 0.62 },
     { s = randspin, t = 1.76 },
     { s = randspin, t = 2.49 },
-    { s =  path .. "mpx_weap_magin_plastic.ogg", t = 3 },
+    { s = pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 3 },
     { s = randspin, t = 3.45 },
 }
 
@@ -131,8 +132,8 @@ ARC9EFT.Glock_Anims = {
         Source = {"ready0", "ready1", "ready2"},
         EventTable = {
             { s = "arc9_eft_shared/pm_draw.ogg", t = 0.05 },
-            { s = path .. "grach_slider_in.ogg", t = 0.58 },
-            { s = path .. "pm_slider_out.ogg", t = 0.79 },
+            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.58 },
+            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.79 },
         },
     },
 
@@ -170,7 +171,7 @@ ARC9EFT.Glock_Anims = {
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = path .. "pm_catch_slider.ogg", t = 0.05 },
+            { s = pathgenericpistol .. "pm_catch_slider.ogg", t = 0.05 },
         }
     },
     ["dryfire"] = {
@@ -268,7 +269,7 @@ ARC9EFT.Glock_Anims = {
             { s = randspin, t = 1.23 },
             { s = randspin, t = 1.55 },
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 1.64 },
-            { s =  path .. "pm_slider_out.ogg", t = 2.12 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.12 },
             { s = randspin, t = 2.51 },
         },
         -- EjectAt = 1.97
@@ -283,9 +284,9 @@ ARC9EFT.Glock_Anims = {
             { s = slidelockgrab, t = 1.38 },
             { s = randspin, t = 1.86 },
             { s = randspin, t = 2.31 },
-            { s =  path .. "pm_slider_out.ogg", t = 2.68 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.68 },
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.75 },
-            { s =  path .. "grach_slider_in.ogg", t = 2.9 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 2.9 },
             { s = randspin, t = 3.27 },
         },
         EjectAt = 2.76
@@ -298,7 +299,7 @@ ARC9EFT.Glock_Anims = {
             { s = slidelockgrab, t = 0.43 },
             { s = slidelockgrab, t = 0.87 },
             { s = slidelock, t = 1.15 },
-            { s =  path .. "pm_slider_out.ogg", t = 1.25 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 1.25 },
             { s = randspin, t = 1.45 },
             { s = randspin, t = 1.61 },
             { s = randspin, t = 1.9 },
@@ -306,7 +307,7 @@ ARC9EFT.Glock_Anims = {
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.51 },
             { s = randspin, t = 2.78 },
             { s =  slidelock, t = 3.12 },
-            { s =  path .. "grach_slider_in.ogg", t = 3.35 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 3.35 },
             { s = randspin, t = 3.81 },
         },
         -- EjectAt = 2.52
@@ -319,9 +320,9 @@ ARC9EFT.Glock_Anims = {
             { s = slidelockgrab, t = 0.41 },
             { s = slidelockgrab, t = 0.67 },
             { s = slidelock, t = 1.04 },
-            { s =  path .. "pm_slider_out.ogg", t = 1.06 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 1.06 },
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 1.16 },
-            { s =  path .. "grach_slider_in.ogg", t = 1.34 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 1.34 },
             { s = randspin, t = 1.66 },
         },
         EjectAt = 1.15
@@ -391,27 +392,27 @@ ARC9EFT.Glock_Anims = {
         Source = "checkchamber",
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = path .. "grach_slider_in.ogg", t = 0.62 },
-            { s = path .. "pm_slider_out.ogg", t = 1.23 },
+            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.62 },
+            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 1.23 },
             { s = randspin, t = 1.46 },
         }
     },
     
     ["firemode_1"] = {
         Source = "firemode1",
-        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.25 } }
+        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.25 } }
     },
     ["firemode_2"] = {
         Source = "firemode0",
-        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.25 } }
+        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.25 } }
     },
     ["firemode_1_empty"] = {
         Source = "firemode1_empty",
-        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.35 } }
+        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.35 } }
     },
     ["firemode_2_empty"] = {
         Source = "firemode0_empty",
-        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.35 } }
+        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.35 } }
     },
 
 }
