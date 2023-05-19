@@ -195,7 +195,7 @@ end
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.003
+SWEP.Spread = 12.03 * ARC9.MOAToAcc
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadMultMove = 1.5
 SWEP.SpreadAddMove = 0.015
