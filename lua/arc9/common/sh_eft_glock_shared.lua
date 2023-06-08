@@ -38,7 +38,7 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!elements["eft_mag_g17_sgmt_50"] and !elements["eft_mag_g17_gl9_21"]) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
-                net.WriteUInt(swep:GetMaxClip1(), 9)
+                net.WriteUInt(swep:GetCapacity(), 9)
                 net.Send(swep:GetOwner())
             end
         else
