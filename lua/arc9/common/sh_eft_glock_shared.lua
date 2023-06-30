@@ -400,19 +400,19 @@ ARC9EFT.Glock_Anims = {
     
     ["firemode_1"] = {
         Source = "firemode1",
-        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.25 } }
+        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.25 } }
     },
     ["firemode_2"] = {
         Source = "firemode0",
-        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.25 } }
+        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.25 } }
     },
     ["firemode_1_empty"] = {
         Source = "firemode1_empty",
-        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.35 } }
+        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.35 } }
     },
     ["firemode_2_empty"] = {
         Source = "firemode0_empty",
-        EventTable = { { s = pathgenericpistol .. "aps_fireselector.ogg", t = 0.35 } }
+        EventTable = { { s = path .. "aps_fireselector.ogg", t = 0.35 } }
     },
 
 }

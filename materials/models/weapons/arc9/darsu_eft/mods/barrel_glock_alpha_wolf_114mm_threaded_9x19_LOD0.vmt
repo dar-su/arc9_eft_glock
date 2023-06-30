@@ -25,7 +25,6 @@
 
 	"$envmaptint" "[0.125 0.125 0.125]"
 	"$color2" "[0.88 0.88 0.88]"
-	"$color2" "[0.88 0.88 0.88]"
 		    	"$detail" "models/weapons/arc9/darsu_eft/mods/aw114thr_heat"
            	"$detailscale" "1"
            	"$detailblendfactor" "0"
