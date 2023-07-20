@@ -53,7 +53,6 @@ ARC9EFT.Glock_AnimsHook = function(swep, anim)
 
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
-        -- rand = 4
 
         if SERVER and ARC9EFTBASE then
             net.Start("arc9eftjam")
@@ -135,6 +134,12 @@ ARC9EFT.Glock_Anims = {
             { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.58 },
             { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.79 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.6, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["draw"] = {
@@ -185,57 +190,112 @@ ARC9EFT.Glock_Anims = {
         Source = "reload_single",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_single
+        EventTable = rst_single,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["reload0"] = {
         Source = "reload0",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_def
+        EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload1"] = {
         Source = "reload1",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_def
+        EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload2"] = {
         Source = "reload2",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_def
+        EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload3"] = {
         Source = "reload3",
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_def
+        EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["reload_empty0"] = {
         Source = {"reload_empty0_0", "reload_empty0_1", "reload_empty0_2"}, 
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty1"] = {
         Source = {"reload_empty1_0", "reload_empty1_1", "reload_empty1_2"}, 
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty2"] = {
         Source = {"reload_empty2_0", "reload_empty2_1", "reload_empty2_2"}, 
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty3"] = {
         Source = {"reload_empty3_0", "reload_empty3_1", "reload_empty3_2"}, 
         MinProgress = 0.85,
         FireASAP = true,
-        EventTable = rst_empty
+        EventTable = rst_empty,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["toggle"] = {
@@ -272,6 +332,12 @@ ARC9EFT.Glock_Anims = {
             { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.12 },
             { s = randspin, t = 2.51 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
         -- EjectAt = 1.97
     },        
     
@@ -288,6 +354,12 @@ ARC9EFT.Glock_Anims = {
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.75 },
             { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 2.9 },
             { s = randspin, t = 3.27 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
         EjectAt = 2.76
     },      
@@ -310,6 +382,12 @@ ARC9EFT.Glock_Anims = {
             { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 3.35 },
             { s = randspin, t = 3.81 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
         -- EjectAt = 2.52
     },        
     
@@ -324,6 +402,12 @@ ARC9EFT.Glock_Anims = {
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 1.16 },
             { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 1.34 },
             { s = randspin, t = 1.66 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
         EjectAt = 1.15
     },
@@ -342,7 +426,13 @@ ARC9EFT.Glock_Anims = {
             { s = "arc9_eft_shared/weapon_generic_pistol_spin4.ogg", t = 1.39 },
             { s = randspin, t = 1.4 },
             { s = randspin, t = 2.92 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["inspect_empty"] = {
@@ -352,40 +442,94 @@ ARC9EFT.Glock_Anims = {
             { s = "arc9_eft_shared/weapon_generic_pistol_spin4.ogg", t = 1.39 },
             { s = randspin, t = 1.4 },
             { s = randspin, t = 2.92 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["inspect_mag_0"] = {
         Source = "magcheck0",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_empty_mag_0"] = {
         Source = "magcheck0_empty",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_mag_1"] = {
         Source = "magcheck1",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_empty_mag_1"] = {
         Source = "magcheck1_empty",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_mag_2"] = {
         Source = "magcheck2",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_empty_mag_2"] = {
         Source = "magcheck2_empty",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_mag_3"] = {
         Source = "magcheck3",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect_empty_mag_3"] = {
         Source = "magcheck3_empty",
         EventTable = rst_magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["inspect0"] = {
@@ -395,7 +539,13 @@ ARC9EFT.Glock_Anims = {
             { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.62 },
             { s = pathgenericpistol .. "pm_slider_out.ogg", t = 1.23 },
             { s = randspin, t = 1.46 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },
     
     ["firemode_1"] = {
