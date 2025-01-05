@@ -77,7 +77,7 @@ end
 SWEP.Spread = 11.69 * ARC9.MOAToAcc
 SWEP.RPM = 450
 SWEP.EFTErgo = 90
-SWEP.BarrelLength = 25
+SWEP.BarrelLength = 18
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = { { Mode = 1 } }
 
@@ -180,7 +180,8 @@ SWEP.DamageLookupTable = {
 
 SWEP.MalfunctionNeverLastShoot = true 
 SWEP.MalfunctionMeanShotsToFail = 700
-SWEP.MalfunctionMeanShotsToFailMultHot = -20
+SWEP.MalfunctionMeanShotsToFailMultHot = -1
+SWEP.MalfunctionWait = -1 -- oh god why the fuck 0 is 0.5???????
 SWEP.HeatCapacity = 75
 SWEP.HeatDissipation = 4
 
@@ -362,7 +363,7 @@ local rst_magcheck = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        Time = 1000
+        -- Time = 1000
     },
 
     ["ready"] = {
