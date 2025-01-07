@@ -38,42 +38,19 @@ SWEP.Firemodes = {
 }
 SWEP.RPM = 1200
 
+SWEP.Recoil = 1.25 -- general multiplier of main recoil
 
-SWEP.Recoil = 1 -- general multiplier of main recoil
-
-SWEP.RecoilUp   = 2   -- up recoil
+SWEP.RecoilUp   = 2.25   -- up recoil
 SWEP.RecoilSide = 1.5 -- sideways recoil
-SWEP.RecoilRandomUp   = 0.2 -- random up/down
-SWEP.RecoilRandomSide = 0.4   -- random left/right
+SWEP.RecoilRandomUp   = 0.4 -- random up/down
+SWEP.RecoilRandomSide = 0.6   -- random left/right
 
-SWEP.RecoilAutoControl = 8 -- autocompenstaion, could be cool if set to high but it also affects main recoil
+SWEP.RecoilAutoControl = 3 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
--- visual recoil   aka visrec
-SWEP.VisualRecoil = 1 -- general multiplier for it
-
-SWEP.EFT_VisualRecoilUp_BURST_SEMI   = 1.25   -- up/down tilt when semi/bursts
-SWEP.VisualRecoilUp                   = 1.7   --   when fullautoing
-SWEP.EFT_VisualRecoilSide_BURST_SEMI = 0.001 -- left/right tilt when semi/burst
-SWEP.VisualRecoilSide                 = 0.08   --   when fullautoing
-SWEP.VisualRecoilRoll = 4 -- roll tilt, a visual thing
-
-SWEP.VisualRecoilPunch = 2 -- How far back visrec moves the gun
-SWEP.VisualRecoilPunchSights = 15 -- same but in sights only
+SWEP.VisualRecoil = 0.5 -- general multiplier for it
 
 SWEP.VisualRecoilDampingConst = 600  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 10 -- the less this is the more wobbly gun moves
-SWEP.VisualRecoilSpringMagnitude = 2 -- some third element of spring, high values make gun shake asf on low fps
-
-SWEP.VisualRecoilPositionBumpUpHipFire = -0.5 -- gun will go down each shot by this value
-SWEP.VisualRecoilPositionBumpUp = -0.1 -- same but in sights
-SWEP.VisualRecoilPositionBumpUpRTScope = 0.05 -- same but in rt scopes, you probably should keep it same as sight value, i guess it doesn't matter anymore after recoil update
-
--- SWEP.VisualRecoilCenter = Vector(2, 20, 2) -- ugh, i dont now what to set it too, but probably it should be diffferent on each gun
--- SWEP.VisualRecoilCenterHipFire = Vector(2, 25, 2)
-SWEP.EFT_ShotsToSwitchToFullAutoBehaviur = 2 -- how many shots for switch to fullauto stats from semi/burst, + 2 shots afterwards are lerping. you probably should not touch this but ok
-
-SWEP.RecoilKick = 0.75 -- camera roll each shot + makes camera go more up when fullautoing
-
 
 local path = "weapons/darsu_eft/glock/"
 
