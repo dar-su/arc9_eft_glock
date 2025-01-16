@@ -54,7 +54,7 @@ SWEP.VisualRecoilSpringPunchDamping = 10 -- the less this is the more wobbly gun
 
 local path = "weapons/darsu_eft/glock/"
 
-SWEP.ShootSound = { path .. "glock18_outdoor_close_1.ogg", path .. "glock18_outdoor_close_2.ogg"}
+SWEP.ShootSound = { path .. "glock18_outdoor_close_1.ogg", path .. "glock18_outdoor_close_2.ogg", path .. "glock18_outdoor_close_2.ogg" }
 SWEP.ShootSoundIndoor = { path .. "glock18_indoor_close_1.ogg", path .. "glock18_indoor_close_2.ogg"}
 SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.ogg", path .. "glock18_outdoor_distant_2.ogg" }
 SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.ogg", path .. "glock18_indoor_distant_2.ogg" }
