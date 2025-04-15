@@ -42,7 +42,9 @@ SWEP.WorldModelOffset = {
     Ang = Angle(-7, 0, 180),
     TPIKPos = Vector(-6, 6, -5), -- rpg
     TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+
+    TPIKHolsterOffset = Vector(-0.5, -1, 1),
 }
 
 SWEP.IronSights = {
@@ -64,10 +66,11 @@ SWEP.CustomizeRotateAnchor = Vector(21, -4.28, -5.23)
 
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
+SWEP.HoldTypeHolstered = "normal"
+
 if GetConVar("arc9_eft_nontpik_mode"):GetBool() then -- pistols
     SWEP.HoldType = "revolver"
     SWEP.HoldTypeSprint = "normal"
-    SWEP.HoldTypeHolstered = "normal"
     SWEP.HoldTypeSights = "revolver"
     SWEP.HoldTypeCustomize = "passive"
 end
