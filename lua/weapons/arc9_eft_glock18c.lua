@@ -6,12 +6,12 @@ SWEP.Base = "arc9_eft_glock17"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = "Glock 18C"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_glock18c")
 SWEP.DefaultBodygroups = "10000000000"
 
-SWEP.Description = [[The Glock 18 is a selective-fire variant of the Glock 17. The firearm is typically used with an extended 33-round-capacity magazine, although other magazines from the Glock 17 can be used, with available capacities of 10, 17, or 19 rounds. It has a keyhole opening cut into the forward portion of the slide, similar to the opening on the Glock long-slide models, although the Glock 18 has a standard-length slide. The keyhole opening provides an area to allow the four, progressively larger (from back to front) compensator cuts machined into the barrel to vent the propellant gases upwards, affording more control over the rapid-firing machine pistol.]]
+SWEP.Description = "eft_weapon_glock18c_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_megapist")
+SWEP.Class = "eft_class_weapon_megapist"
 
 SWEP.StandardPresets = {
     "[Lizzie]XQAAAQBfAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4R/69N18r9zh/d8oSgzitMAI/rMKViVr2H6OV/M/GYal8hVJWN0+DwOXF1+/TTjqjuoUwSLVDZgEhOxQdvv6iRoCsGCLCzVWP1HIrA+EV+7vFpTaiS3JillQxwfchhdlZvee+amclr7fh/j4e6s0IO0rxlQRZocbPPEmliYz1qCSeYLuwDdBppP5wPBBLx/AA=",

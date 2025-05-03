@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = "Glock 17"
-SWEP.Description = [[Glock 17 is an Austrian pistol designed by Glock company for the Austrian army purposes. Thanks to both its impressive combat characteristics and reliablity it gained wide recognition and popularity as a police, shooting sports and civilian self-defense weapon.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_glock17")
+SWEP.Description = "eft_weapon_glock17_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
+SWEP.Class = "eft_class_weapon_pist"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Glock GmbH",
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "9x19mm Parabellum",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = "Recoil",
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = "Republic of Austria",
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1982"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_glock",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_9x19",
+    ["eft_trivia_act3"] = "eft_trivia_act_recoil",
+    ["eft_trivia_country4"] = "eft_trivia_country_aust",
+    ["eft_trivia_year5"] = "1982"
 }
 
 
